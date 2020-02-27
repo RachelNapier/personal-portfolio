@@ -1,3 +1,7 @@
+/* =========================================================
+                        GLOBAL STYLING
+   ========================================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +16,18 @@ body {
   color: #eee;
   background: url(images/background.jpg) no-repeat center fixed;
   background-size: cover;
+}
+
+/* =========================================================
+                        SECTION STYLING
+   ========================================================= */
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
 }
