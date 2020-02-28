@@ -44,6 +44,7 @@ header,
 
 .top-nav {
   position: fixed;
+  top: -100vh;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -76,4 +77,9 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
 }
