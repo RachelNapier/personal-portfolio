@@ -64,5 +64,15 @@ li {
 }
 .nav-link {
   font-family: "Lobster", sans-serif;
+  font-size: 20px;
   padding: 10px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(#fd57bf, #67c7ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
