@@ -31,8 +31,6 @@ p {
 img {
   width: 100%;
 }
-<<<<<<< HEAD
-=======
 
 /* =========================================================
                         HEADER STYLING
@@ -53,15 +51,18 @@ header,
 }
 
 .nav-list {
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
-    margin: 0 32px;
+  margin: 0 32px;
 }
->>>>>>> header
+.nav-link {
+  font-family: "Lobster", sans-serif;
+  padding: 10px;
+}
