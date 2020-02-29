@@ -69,9 +69,16 @@ img {
 }
 
 .section-heading h1::before {
-  width: 160px;
+  width: 100px;
   height: 3px;
   border-radius: 12.8px;
+}
+
+.section-heading h1:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  bottom: -15px;
 }
 
 .section-heading h2 {
