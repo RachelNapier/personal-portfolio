@@ -275,6 +275,10 @@ li {
   margin-bottom: 0;
 }
 
+.margin-right {
+  margin-right: 80px;
+}
+
 .profile-img {
   flex: 1;
 }
@@ -287,5 +291,5 @@ li {
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
-  opacity: 0.3;
+  opacity: 0.6;
 }
