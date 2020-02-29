@@ -340,4 +340,15 @@ textarea {
   padding: 16px;
   margin-bottom: 5px;
   border: none;
+  outline-color: #fd57bf;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #fd57bf;
+  color: #eee;
+  padding: 16px 32px;
+  border-radius: 12.8px;
+  cursor: pointer;
+  transition: color 650ms;
 }
