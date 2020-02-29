@@ -278,3 +278,15 @@ li {
 .profile-img {
   flex: 1;
 }
+
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h3 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
