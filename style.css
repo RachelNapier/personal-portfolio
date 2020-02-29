@@ -185,10 +185,26 @@ li {
 }
 
 .profile-img {
-   flex: 1;
-   margin-right: 80px;
+  flex: 1;
+  margin-right: 80px;
 }
 
 .about-details {
   flex: 1;
+}
+
+.social-media i {
+  font-size: 42px;
+}
+
+.fa-twitter-square:hover {
+  color: #38a1f3;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b7;
+}
+
+.fa-github-square:hover {
+  color: #808080;
 }
