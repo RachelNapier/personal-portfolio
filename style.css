@@ -338,7 +338,7 @@ select,
 textarea {
   width: 100%;
   padding: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   border: none;
   outline-color: #fd57bf;
 }
@@ -347,8 +347,14 @@ input[type="submit"] {
   width: initial;
   background-color: #fd57bf;
   color: #eee;
+  text-transform: uppercase;
   padding: 16px 32px;
   border-radius: 12.8px;
   cursor: pointer;
-  transition: color 650ms;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  background-color: #67c7ff;
+  color: #3a0962;
 }
