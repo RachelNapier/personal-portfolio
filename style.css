@@ -101,3 +101,14 @@ li {
 .menu-toggler.open {
   transform: rotate(-45deg);
 }
+
+.bar {
+  background: linear-gradient(to right, #67c7ff, #fd57bf);
+  width: 100%;
+  height: 4px;
+  border-radius: 12.8px;
+}
+
+.bar.half {
+  width: 50%;
+}
