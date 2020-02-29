@@ -45,6 +45,7 @@ header,
 .top-nav {
   position: fixed;
   top: -100vh;
+  z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -64,12 +65,17 @@ li {
   margin: 0 32px;
 }
 
+#welcome-section h1,
 .nav-link {
   font-family: "Lobster", sans-serif;
-  font-size: 16px;
-  padding: 10px;
+  padding: 16px;
 }
 
+.nav-link {
+  font-size: 16px;
+}
+
+#welcome-section h1,
 .nav-link:hover,
 .nav-link:focus {
   background: linear-gradient(to top, #67c7ff, #fd57bf);
@@ -130,4 +136,18 @@ li {
 
 .open .bar.end {
   transform: rotate(-450deg) translateX(-12.8px);
+}
+
+#welcome-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#welcome-section h1 {
+  font-size: 18px;
 }
