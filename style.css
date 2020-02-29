@@ -1,0 +1,372 @@
+/* =========================================================
+                        GLOBAL STYLING
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #eee;
+  background: url(images/background.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+section {
+  padding: 96px;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+/* =========================================================
+                      REUSED STYLING
+   ========================================================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-heading h1,
+.section-heading h2 {
+  font-weight: 300;
+}
+
+.section-heading h1 {
+  font-size: 42px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.section-heading h1::before,
+.section-heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before {
+  width: 100px;
+  height: 3px;
+  border-radius: 12.8px;
+}
+
+.section-heading h1:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  bottom: -15px;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+/* =========================================================
+                        HEADER STYLING
+   ========================================================= */
+
+header,
+.top-nav {
+  width: 100%;
+  height: 100vh;
+}
+
+.top-nav {
+  position: fixed;
+  top: -100vh;
+  z-index: 50;
+  background-color: #16162d;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin: 0 32px;
+}
+
+#welcome-section h1,
+.nav-link {
+  font-family: "Lobster", sans-serif;
+  padding: 16px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+#welcome-section h1,
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(to top, #67c7ff, #fd57bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 80px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: 650ms ease-out;
+}
+
+.menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar {
+  background: linear-gradient(to right, #67c7ff, #fd57bf);
+  width: 100%;
+  height: 4px;
+  border-radius: 12.8px;
+}
+
+.bar.half {
+  width: 50%;
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(12.8px);
+}
+
+.bar.end {
+  align-self: flex-end;
+  transform-origin: left;
+  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.end {
+  transform: rotate(-450deg) translateX(-12.8px);
+}
+
+#welcome-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+#welcome-section h1 {
+  font-size: 26px;
+}
+
+#welcome-section h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* =========================================================
+                      ABOUT STYLING
+   ========================================================= */
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 32px;
+}
+
+.about-heading h1 {
+  font-size: 32px;
+  opacity: 0.6;
+}
+
+.about-heading h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 80px;
+}
+
+.about-details {
+  flex: 1;
+}
+
+.social-media i {
+  font-size: 42px;
+  margin-top: 24px;
+  transition: color 650ms;
+}
+
+.fa-twitter-square:hover,
+.fa-linkedin-square:hover {
+  color: #38a1f3;
+}
+
+.fa-github-square:hover {
+  color: #808080;
+}
+
+/* =========================================================
+                    PORTFOLIO STYLING
+   ========================================================= */
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.margin-right {
+  margin-right: 80px;
+}
+
+.profile-img,
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h3,
+.portfolio-description h4 {
+  font-weight: 300;
+}
+
+.portfolio-description h4 {
+  font-size: 32px;
+  margin: 16px 0px;
+}
+
+.portfolio-description h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.portfolio-description .project-tile {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 18px;
+  color: #67c7ff;
+  transition: color 650ms;
+}
+
+.portfolio-description .project-tile:hover {
+  color: #2167cd;
+}
+
+/* =========================================================
+                    CONTACT/FORM STYLING
+   ========================================================= */
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 18px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: none;
+  outline-color: #fd57bf;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #fd57bf;
+  color: #eee;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 12.8px;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  background-color: #67c7ff;
+  color: #3a0962;
+}
+
+/* =========================================================
+                    FOOTER STYLING
+   ========================================================= */
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #16162d;
+  padding: 32px 0px;
+  position: relative;
+}
