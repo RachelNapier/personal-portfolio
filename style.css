@@ -149,5 +149,10 @@ li {
 }
 
 #welcome-section h1 {
+  font-size: 20px;
+}
+
+#welcome-section h2 {
   font-size: 18px;
+  font-weight: 300;
 }
