@@ -72,7 +72,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(#fd57bf, #67c7ff);
+  background: linear-gradient(to top, #67c7ff, #fd57bf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -82,4 +82,22 @@ li {
 .top-nav.open {
   top: 0;
   border-radius: initial;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 80px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: transform 650ms ease-out;
+}
+
+.menu-toggler.open {
+  transform: rotate(-45deg);
 }
