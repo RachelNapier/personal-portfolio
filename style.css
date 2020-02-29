@@ -18,6 +18,10 @@ body {
   background-size: cover;
 }
 
+section {
+  padding: 96px;
+}
+
 a {
   text-decoration: none;
   color: #eee;
@@ -32,6 +36,10 @@ img {
   width: 100%;
 }
 
+/* =========================================================
+                      REUSED STYLING
+   ========================================================= */
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -42,7 +50,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin: 160px 0px 80px;
+  margin-bottom: 80px;
 }
 
 .section-heading h1,
@@ -287,9 +295,18 @@ li {
   flex: 1;
 }
 
+.portfolio-description h3,
+.portfolio-description h4 {
+  font-weight: 300;
+}
+
+.portfolio-description h4 {
+  font-size: 32px;
+  margin: 16px 0px;
+}
+
 .portfolio-description h3 {
   font-size: 24px;
-  font-weight: 300;
   text-transform: uppercase;
   opacity: 0.6;
 }
