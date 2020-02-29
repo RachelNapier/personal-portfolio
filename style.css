@@ -42,7 +42,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 160px;
+  margin: 160px 0px 80px;
 }
 
 .section-heading h1,
@@ -248,14 +248,12 @@ li {
 
 .social-media i {
   font-size: 42px;
+  margin-top: 24px;
 }
 
-.fa-twitter-square:hover {
-  color: #38a1f3;
-}
-
+.fa-twitter-square:hover,
 .fa-linkedin-square:hover {
-  color: #0077b7;
+  color: #38a1f3;
 }
 
 .fa-github-square:hover {
