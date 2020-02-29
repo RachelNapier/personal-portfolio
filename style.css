@@ -64,12 +64,6 @@ header,
 li {
   margin: 0 32px;
 }
-<<<<<<< HEAD
-.nav-link {
-  font-family: "Lobster", sans-serif;
-  font-size: 20px;
-  padding: 10px;
-=======
 
 #welcome-section h1,
 .nav-link {
@@ -79,7 +73,6 @@ li {
 
 .nav-link {
   font-size: 16px;
->>>>>>> header
 }
 
 #welcome-section h1,
@@ -156,10 +149,10 @@ li {
 }
 
 #welcome-section h1 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 #welcome-section h2 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
 }
