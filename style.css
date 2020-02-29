@@ -175,11 +175,20 @@ li {
 }
 
 .about-heading h1 {
-  font-size: 26px;
-  opacity: 0.3;
+  font-size: 32px;
+  opacity: 0.6;
 }
 
 .about-heading h2 {
   font-size: 16px;
   font-weight: 300;
+}
+
+.profile-img {
+   flex: 1;
+   margin-right: 80px;
+}
+
+.about-details {
+  flex: 1;
 }
