@@ -358,3 +358,15 @@ input[type="submit"]:hover {
   background-color: #67c7ff;
   color: #3a0962;
 }
+
+/* =========================================================
+                    FOOTER STYLING
+   ========================================================= */
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #16162d;
+  padding: 32px 0px;
+  position: relative;
+}
