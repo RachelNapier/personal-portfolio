@@ -310,3 +310,9 @@ li {
   text-transform: uppercase;
   opacity: 0.6;
 }
+
+.portfolio-description .project-tile {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 18px;
+}
