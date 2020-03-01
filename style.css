@@ -17,7 +17,7 @@ body {
 }
 
 section {
-  padding: 96px 0px;
+  padding: 56px 0px;
 }
 
 a {
@@ -58,7 +58,7 @@ input {
 
 .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 32px;
 }
 
 .section-heading h1,
@@ -309,7 +309,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 48px;
 }
 
 .portfolio-item:last-child {
@@ -328,18 +328,18 @@ li {
 
 .portfolio-description h4 {
   font-size: 16px;
-  margin: 12px 0px;
+  margin: 6px 0 12px;
 }
 
 .portfolio-description h3 {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   opacity: 0.6;
 }
 
 .portfolio-description .project-tile {
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 12px;
   font-size: 12px;
   color: #67c7ff;
   transition: color 650ms;
@@ -347,6 +347,14 @@ li {
 
 .portfolio-description .project-tile:hover {
   color: #2167cd;
+}
+
+.profile-img {
+  margin-bottom: 32px;
+}
+
+.portfolio-description {
+  margin: 0;
 }
 
 /* =========================================================
@@ -403,6 +411,16 @@ input[type="submit"]:hover {
                   RESPONSIVE STYLING
    ========================================================= */
 
+@media (max-width: 767px) {
+  .profile-img {
+    order: 1;
+  }
+
+  .portfolio-description {
+    order: 2;
+  }
+}
+
 @media (min-width: 768px) {
   #welcome-section h1 {
     font-size: 72px;
@@ -425,7 +443,7 @@ input[type="submit"]:hover {
   .nav-link {
     font-size: 24px;
   }
-  
+
   .about .container,
   .portfolio-item,
   .nav-list {
@@ -440,7 +458,8 @@ input[type="submit"]:hover {
     margin: 0 32px;
   }
 
-  .margin-right {
+  .margin-right,
+  .profile-img {
     margin-right: 80px;
   }
 }
