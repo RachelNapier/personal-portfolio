@@ -250,6 +250,7 @@ li {
 .about .container {
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .about-heading {
@@ -264,7 +265,7 @@ li {
 }
 
 .profile-img {
-  margin-right: 80px;
+  margin: 0 0 48px;
 }
 
 .about-details,
@@ -278,12 +279,11 @@ li {
 
 .about-details li {
   margin: 0 16px;
+  align-items: center;
 }
 
 .social-media {
-  width: 120px;
-  height: 120px;
-  margin-left: 32px;
+  margin-top: 32px;
 }
 
 .social-media i {
@@ -406,7 +406,7 @@ input[type="submit"]:hover {
                   RESPONSIVE STYLING
    ========================================================= */
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) {
   #welcome-section h1 {
     font-size: 72px;
   }
@@ -435,6 +435,10 @@ input[type="submit"]:hover {
 
   li {
     margin: 0px 48px;
+  }
+
+  .about .container {
+    flex-direction: row;
   }
 
   .about-details li {
