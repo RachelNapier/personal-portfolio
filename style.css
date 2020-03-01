@@ -306,6 +306,7 @@ li {
 
 .portfolio-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
@@ -313,10 +314,6 @@ li {
 
 .portfolio-item:last-child {
   margin-bottom: 0;
-}
-
-.margin-right {
-  margin-right: 80px;
 }
 
 .profile-img,
@@ -428,7 +425,9 @@ input[type="submit"]:hover {
   .nav-link {
     font-size: 24px;
   }
-
+  
+  .about .container,
+  .portfolio-item,
   .nav-list {
     flex-direction: row;
   }
@@ -437,11 +436,11 @@ input[type="submit"]:hover {
     margin: 0px 48px;
   }
 
-  .about .container {
-    flex-direction: row;
-  }
-
   .about-details li {
     margin: 0 32px;
+  }
+
+  .margin-right {
+    margin-right: 80px;
   }
 }
