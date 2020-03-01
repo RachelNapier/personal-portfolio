@@ -12,7 +12,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
-  color: #eee;
   background: url(images/background.jpg) no-repeat center fixed;
   background-size: cover;
 }
@@ -23,16 +22,26 @@ section {
 
 a {
   text-decoration: none;
-  color: #eee;
 }
 
 p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
 }
 
 img {
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+label,
+input {
+  color: #eee;
 }
 
 /* =========================================================
@@ -98,8 +107,14 @@ img {
 
 header,
 .top-nav {
-  width: 100%;
   height: 100vh;
+}
+
+header,
+.top-nav,
+.nav-list,
+.bar {
+  width: 100%;
 }
 
 .top-nav {
@@ -112,12 +127,15 @@ header,
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
-.nav-list {
-  list-style: none;
-  width: 100%;
-  height: 100%;
+.nav-list,
+.menu-toggler {
   display: flex;
   flex-direction: column;
+}
+
+.nav-list {
+  list-style: none;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -130,10 +148,6 @@ li {
 .nav-link {
   font-family: "Lobster", sans-serif;
   padding: 16px;
-}
-
-.nav-link {
-  font-size: 18px;
 }
 
 #welcome-section h1,
@@ -151,14 +165,16 @@ li {
   border-radius: initial;
 }
 
+#welcome-section,
 .menu-toggler {
   position: absolute;
-  top: 80px;
-  right: 80px;
-  width: 80px;
-  height: 64px;
-  display: flex;
-  flex-direction: column;
+}
+
+.menu-toggler {
+  top: 32px;
+  right: 32px;
+  width: 32px;
+  height: 24px;
   justify-content: space-between;
   cursor: pointer;
   z-index: 1500;
@@ -171,7 +187,6 @@ li {
 
 .bar {
   background: linear-gradient(to right, #67c7ff, #fd57bf);
-  width: 100%;
   height: 4px;
   border-radius: 12.8px;
 }
@@ -200,7 +215,6 @@ li {
 }
 
 #welcome-section {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -209,21 +223,31 @@ li {
   z-index: 1;
 }
 
-#welcome-section h1 {
-  font-size: 48px;
+#welcome-section h1,
+.about-heading h1 {
+  font-size: 36px;
 }
 
-#welcome-section h2 {
+#welcome-section h2,
+.about-heading h2 {
   font-size: 16px;
   font-weight: 300;
+}
+
+.nav-link {
+  font-size: 14px;
 }
 
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
 
-.about .container {
+.about .container,
+.about-details .nav-list {
   display: flex;
+}
+
+.about .container {
   align-items: center;
   justify-content: center;
 }
@@ -236,13 +260,7 @@ li {
 }
 
 .about-heading h1 {
-  font-size: 38px;
   opacity: 0.6;
-}
-
-.about-heading h2 {
-  font-size: 16px;
-  font-weight: 300;
 }
 
 .profile-img {
@@ -255,17 +273,21 @@ li {
 }
 
 .about-details .nav-list {
-  display: flex;
   flex-direction: row;
 }
 
-.about-details .nav-list {
-  margin: 0px 32px;
+.about-details li {
+  margin: 0 16px;
+}
+
+.social-media {
+  width: 120px;
+  height: 120px;
+  margin-left: 32px;
 }
 
 .social-media i {
-  font-size: 42px;
-  margin-top: 24px;
+  font-size: 32px;
   transition: color 650ms;
 }
 
@@ -308,12 +330,12 @@ li {
 }
 
 .portfolio-description h4 {
-  font-size: 20px;
-  margin: 16px 0px;
+  font-size: 16px;
+  margin: 12px 0px;
 }
 
 .portfolio-description h3 {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   opacity: 0.6;
 }
@@ -321,7 +343,7 @@ li {
 .portfolio-description .project-tile {
   display: inline-block;
   margin-top: 32px;
-  font-size: 18px;
+  font-size: 12px;
   color: #67c7ff;
   transition: color 650ms;
 }
@@ -340,7 +362,7 @@ form {
 }
 
 form label {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 input,
@@ -356,7 +378,6 @@ textarea {
 input[type="submit"] {
   width: initial;
   background-color: #fd57bf;
-  color: #eee;
   text-transform: uppercase;
   padding: 16px 32px;
   border-radius: 12.8px;
@@ -385,7 +406,7 @@ input[type="submit"]:hover {
                   RESPONSIVE STYLING
    ========================================================= */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   #welcome-section h1 {
     font-size: 72px;
   }
