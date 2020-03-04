@@ -16,17 +16,17 @@ body {
   background-size: cover;
 }
 
+p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
 section {
   padding: 56px 20px;
 }
 
 a {
   text-decoration: none;
-}
-
-p {
-  font-size: 12px;
-  font-weight: 300;
 }
 
 img {
@@ -55,17 +55,6 @@ input {
   margin: 0 auto;
   position: relative;
 }
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.section-heading h1,
-.section-heading h2 {
-  font-weight: 300;
-}
-
 .section-heading h1 {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.6);
@@ -84,17 +73,27 @@ input {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
+.section-heading h1:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  bottom: -15px;
+}
+
 .section-heading h1::before {
   width: 100px;
   height: 3px;
   border-radius: 12.8px;
 }
 
-.section-heading h1:after {
-  width: 18px;
-  height: 18px;
-  border-radius: 100%;
-  bottom: -15px;
+.section-heading h1,
+.section-heading h2 {
+  font-weight: 300;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .section-heading h2 {
@@ -105,19 +104,6 @@ input {
                         HEADER STYLING
    ========================================================= */
 
-header,
-.top-nav {
-  height: 100vh;
-}
-
-header,
-.top-nav,
-.nav-list,
-.bar {
-  width: 100%;
-}
-
-
 .top-nav {
   position: fixed;
   top: -100vh;
@@ -126,49 +112,6 @@ header,
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
-}
-
-.nav-list,
-.menu-toggler {
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-list {
-  list-style: none;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-li {
-  margin: 32px 0px;
-}
-
-#welcome-section h1,
-.nav-link {
-  font-family: "Lobster", sans-serif;
-  padding: 16px;
-}
-
-#welcome-section h1,
-.nav-link:hover,
-.nav-link:focus {
-  background: linear-gradient(to top, #67c7ff, #fd57bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.top-nav.open {
-  top: 0;
-  border-radius: initial;
-}
-
-#welcome-section,
-.menu-toggler {
-  position: absolute;
 }
 
 .menu-toggler {
@@ -183,37 +126,14 @@ li {
   transition: 650ms ease-out;
 }
 
-.menu-toggler.open {
-  transform: rotate(-45deg);
-}
-
-.bar {
-  background: linear-gradient(to right, #67c7ff, #fd57bf);
-  height: 4px;
-  border-radius: 12.8px;
-}
-
-.bar.half {
-  width: 50%;
-}
-
-.bar.start {
-  transform-origin: right;
-  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.open .bar.start {
-  transform: rotate(-450deg) translateX(12.8px);
-}
-
-.bar.end {
-  align-self: flex-end;
-  transform-origin: left;
-  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.open .bar.end {
-  transform: rotate(-450deg) translateX(-12.8px);
+#welcome-section h1,
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(to top, #67c7ff, #fd57bf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 #welcome-section {
@@ -225,15 +145,92 @@ li {
   z-index: 1;
 }
 
+.nav-list {
+  list-style: none;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  background: linear-gradient(to right, #67c7ff, #fd57bf);
+  height: 4px;
+  border-radius: 12.8px;
+}
+
+.bar.end {
+  align-self: flex-end;
+  transform-origin: left;
+  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+#welcome-section h1,
+.nav-link {
+  font-family: "Lobster", sans-serif;
+  padding: 16px;
+}
+
+.nav-list,
+.menu-toggler {
+  display: flex;
+  flex-direction: column;
+}
+#welcome-section h2,
+.about-heading h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-450deg) translateX(12.8px);
+}
+
+.open .bar.end {
+  transform: rotate(-450deg) translateX(-12.8px);
+}
+
+header,
+.top-nav,
+.nav-list,
+.bar {
+  width: 100%;
+}
+
+#welcome-section,
+.menu-toggler {
+  position: absolute;
+}
+
 #welcome-section h1,
 .about-heading h1 {
   font-size: 36px;
 }
 
-#welcome-section h2,
-.about-heading h2 {
-  font-size: 16px;
-  font-weight: 300;
+header,
+.top-nav {
+  height: 100vh;
+}
+
+li {
+  margin: 32px 0px;
+}
+
+.menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar.half {
+  width: 50%;
 }
 
 .nav-link {
@@ -303,8 +300,16 @@ li {
 }
 
 /* =========================================================
-                    PORTFOLIO STYLING
-   ========================================================= */
+PORTFOLIO STYLING
+========================================================= */
+
+.portfolio-description .project-tile {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #67c7ff;
+  transition: color 650ms;
+}
 
 .portfolio-item {
   display: flex;
@@ -314,19 +319,11 @@ li {
   margin-bottom: 56px;
 }
 
-.portfolio-item:last-child {
-  margin-bottom: 0;
-}
-
-.profile-img,
-.portfolio-description {
-  flex: 1;
-  width: 100%;
-}
-
-.portfolio-description h3,
-.portfolio-description h4 {
-  font-weight: 300;
+.portfolio-img {
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .portfolio-description h4 {
@@ -341,52 +338,28 @@ li {
   opacity: 0.6;
 }
 
-.portfolio-description .project-tile {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 12px;
-  color: #67c7ff;
-  transition: color 650ms;
+.profile-img,
+.portfolio-description {
+  flex: 1;
+  width: 100%;
+}
+
+.portfolio-description h3,
+.portfolio-description h4 {
+  font-weight: 300;
 }
 
 .portfolio-description .project-tile:hover {
   color: #2167cd;
 }
 
-.portfolio-img {
-  margin-bottom: 16px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+.portfolio-item:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================================================
                     CONTACT/FORM STYLING
    ========================================================= */
-
-form {
-  margin: 0 auto;
-}
-
-form label {
-  font-size: 12px;
-}
-
-form,
-input,
-select,
-textarea {
-  width: 100%;
-}
-
-input,
-select,
-textarea {
-  padding: 16px;
-  margin-bottom: 16px;
-  border: none;
-  outline-color: #fd57bf;
-}
 
 input[type="submit"] {
   width: initial;
@@ -398,9 +371,39 @@ input[type="submit"] {
   transition: background-color 650ms;
 }
 
+input,
+select,
+textarea {
+  padding: 16px;
+  margin: 6px 0 16px;
+  border: none;
+  outline-color: #fd57bf;
+  color: #000;
+}
+
+input[type="submit"] {
+  color: #16162d;
+  font-weight: 600;
+  font-size: 10px;
+}
+
 input[type="submit"]:hover {
   background-color: #67c7ff;
-  color: #3a0962;
+}
+
+form,
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+form {
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 12px;
 }
 
 /* =========================================================
@@ -436,6 +439,37 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 768px) {
+  .menu-toggler {
+    width: 42px;
+    height: 34px;
+  }
+
+  .about .container,
+  .portfolio-item,
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .section-heading h2,
+  .portfolio-description h3 {
+    font-size: 26px;
+  }
+
+  .portfolio-description .project-tile,
+  form label,
+  p {
+    font-size: 16px;
+  }
+
+  .margin-right,
+  .profile-img {
+    margin-right: 64px;
+  }
+
+  input[type="submit"]  {
+    font-size: 14px;
+  }
+
   section {
     padding: 120px 40px;
   }
@@ -460,37 +494,16 @@ input[type="submit"]:hover {
     font-size: 62px;
   }
 
-  .section-heading h2,
-  .portfolio-description h3 {
-    font-size: 26px;
-  }
-
   .portfolio-description h4 {
     font-size: 22px;
   }
+
   .nav-link {
     font-size: 20px;
   }
 
-  .portfolio-description .project-tile,
-  form label,
-  p {
-    font-size: 16px;
-  }
-
   .social-media i {
     font-size: 42px;
-  }
-
-  .menu-toggler {
-    width: 42px;
-    height: 34px;
-  }
-
-  .about .container,
-  .portfolio-item,
-  .nav-list {
-    flex-direction: row;
   }
 
   .portfolio-item {
@@ -503,11 +516,6 @@ input[type="submit"]:hover {
 
   .about-details li {
     margin: 0 32px;
-  }
-
-  .margin-right,
-  .profile-img {
-    margin-right: 64px;
   }
 
   form {
