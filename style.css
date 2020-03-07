@@ -21,18 +21,6 @@ p {
   font-weight: 300;
 }
 
-section {
-  padding: 56px 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -40,8 +28,26 @@ h4,
 p,
 a,
 label,
-input {
+input,
+button {
   color: #eee;
+}
+
+section {
+  padding: 56px 20px;
+}
+
+section:first-child {
+  padding: 0;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 
 /* =========================================================
@@ -55,6 +61,7 @@ input {
   margin: 0 auto;
   position: relative;
 }
+
 .section-heading h1 {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.6);
@@ -86,6 +93,10 @@ input {
   border-radius: 12.8px;
 }
 
+.section-heading {
+  padding-top: 62px;
+}
+
 .section-heading h1,
 .section-heading h2 {
   font-weight: 300;
@@ -104,26 +115,11 @@ input {
                         HEADER STYLING
    ========================================================= */
 
-.top-nav {
-  position: fixed;
-  top: -100vh;
-  z-index: 50;
-  background-color: #16162d;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
-  transition: all 650ms cubic-bezier(1, 0, 0, 1);
-}
-
-.menu-toggler {
-  position: fixed;
-  top: 32px;
-  right: 32px;
-  width: 32px;
-  height: 24px;
+header {
+  display: flex;
   justify-content: space-between;
-  cursor: pointer;
-  z-index: 1500;
-  transition: 650ms ease-out;
+  align-items: center;
+  padding: 30px 10px;
 }
 
 #welcome-section h1,
@@ -137,31 +133,12 @@ input {
 }
 
 #welcome-section {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  margin: 0 auto;
+  padding-top: 120px;
   text-align: center;
-  z-index: 1;
-}
-
-.nav-list {
-  list-style: none;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.bar {
-  background: linear-gradient(to right, #67c7ff, #fd57bf);
-  height: 4px;
-  border-radius: 12.8px;
-}
-
-.bar.end {
-  align-self: flex-end;
-  transform-origin: left;
-  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  width: 100%;
+  height: 100vh;
+  padding: 120px 0;
 }
 
 #welcome-section h1,
@@ -170,45 +147,10 @@ input {
   padding: 16px;
 }
 
-.nav-list,
-.menu-toggler {
-  display: flex;
-  flex-direction: column;
-}
 #welcome-section h2,
 .about-heading h2 {
   font-size: 16px;
   font-weight: 300;
-}
-
-.top-nav.open {
-  top: 0;
-  border-radius: initial;
-}
-
-.bar.start {
-  transform-origin: right;
-  transition: 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.open .bar.start {
-  transform: rotate(-450deg) translateX(12.8px);
-}
-
-.open .bar.end {
-  transform: rotate(-450deg) translateX(-12.8px);
-}
-
-header,
-.top-nav,
-.nav-list,
-.bar {
-  width: 100%;
-}
-
-#welcome-section,
-.menu-toggler {
-  position: absolute;
 }
 
 #welcome-section h1,
@@ -216,27 +158,20 @@ header,
   font-size: 36px;
 }
 
-header,
-.top-nav {
-  height: 100vh;
+.nav-link,
+button {
+  font-size: 14px;
 }
 
 li {
   margin: 32px 0px;
 }
 
-.menu-toggler.open {
-  transform: rotate(-45deg);
+.logo {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
 }
-
-.bar.half {
-  width: 50%;
-}
-
-.nav-link {
-  font-size: 14px;
-}
-
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
@@ -321,9 +256,21 @@ PORTFOLIO STYLING
 
 .portfolio-img {
   margin-bottom: 16px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  border-radius: 10px;
+}
+
+.portfolio-img img {
+  border-radius: 5px;
+}
+
+.portfolio-img:hover {
+  transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  box-shadow: 10px 10px 5px #888888;
+  cursor: pointer;
 }
 
 .portfolio-description h4 {
@@ -413,7 +360,7 @@ form label {
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #16162d;
+  background-color: #221c3b;
   padding: 32px 0px;
   position: relative;
 }
@@ -433,20 +380,15 @@ form label {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  img {
-    max-width: 450px;
+  .profile-img,
+  .portfolio-img {
+    min-width: 450px;
   }
 }
 
 @media (min-width: 768px) {
-  .menu-toggler {
-    width: 42px;
-    height: 34px;
-  }
-
   .about .container,
-  .portfolio-item,
-  .nav-list {
+  .portfolio-item {
     flex-direction: row;
   }
 
@@ -463,10 +405,10 @@ form label {
 
   .margin-right,
   .profile-img {
-    margin-right: 64px;
+    margin-right: 40px;
   }
 
-  input[type="submit"]  {
+  input[type="submit"] {
     font-size: 14px;
   }
 
