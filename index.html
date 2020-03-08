@@ -6,12 +6,14 @@
     </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -22,6 +24,9 @@
   <body>
     <header>
       <nav id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
         <div class="logo-container">
           <img class="logo" src="images/logo.png" alt="logo" />
         </div>
@@ -42,7 +47,16 @@
     <section id="home">
       <div id="welcome-section">
         <h1 id="home">Rachel Napier</h1>
-        <h2>Web Developer</h2>
+        <!---- animated ---->
+        <h2>
+          Front End Web
+          <span
+            class="txt-type"
+            data-wait="1000ms"
+            data-words='["Developer", "Designer", "Enthusiast"]'
+          ></span>
+        </h2>
+        <!---- End ---->
       </div>
     </section>
     <section class="about" id="about">
@@ -148,12 +162,22 @@
             >
           </div>
           <div class="portfolio-img">
-            <img src="images/port-img-2.png" alt="Survey Form Project" />
+            <a
+              href="https://rachelnapier.github.io/final-fantasy-survey-form/"
+              target="_blank"
+            >
+              <img src="images/port-img-2.png" alt="Survey Form Project" />
+            </a>
           </div>
         </div>
         <div class="portfolio-item">
           <div class="portfolio-img margin-right">
-            <img src="images/port-img-4.png" alt="Landing Page Project" />
+            <a
+              href="https://rachelnapier.github.io/ps-product-landing-page/"
+              target="_blank"
+            >
+              <img src="images/port-img-4.png" alt="Landing Page Project" />
+            </a>
           </div>
           <div class="portfolio-description">
             <h3>Web Design</h3>
@@ -190,7 +214,15 @@
             >
           </div>
           <div class="portfolio-img">
-            <img src="images/port-img-3.png" alt="Technical Document Project" />
+            <a
+              href="https://rachelnapier.github.io/technical-document-page/"
+              target="_blank"
+            >
+              <img
+                src="images/port-img-3.png"
+                alt="Technical Document Project"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -235,8 +267,12 @@
         &copy; 2020 Rachel Napier
       </p>
     </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- aos -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
