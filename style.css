@@ -11,9 +11,9 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Roboto", sans-serif;
-  background: url(images/background.jpg) no-repeat center fixed;
+  background: url(images/large-background.jpeg) no-repeat fixed;
   background-size: cover;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -34,11 +34,7 @@ button {
 }
 
 section {
-  padding: 56px 20px;
-}
-
-section:first-child {
-  padding: 0;
+  padding: 56px 20px 0px;
 }
 
 a,
@@ -51,7 +47,7 @@ img {
 }
 
 /* =========================================================
-                      REUSED STYLING
+                      REUSABLE STYLING
    ========================================================= */
 
 .container {
@@ -69,7 +65,7 @@ img {
   position: relative;
   margin-bottom: 16px;
 }
-
+/* Section Heading Lines */
 .section-heading h1::before,
 .section-heading h1::after {
   content: "";
@@ -92,7 +88,7 @@ img {
   height: 3px;
   border-radius: 12.8px;
 }
-
+/* END */
 .section-heading {
   padding-top: 62px;
 }
@@ -117,45 +113,57 @@ img {
 
 header {
   display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  z-index: 100;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10px;
+  padding: 12px 10px;
+  background-color: #291531;
 }
 
-#welcome-section h1,
+header nav ul {
+  align-items: center;
+  padding: 12px 10px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list li a {
+  transition: 0.2 ease-in-out;
+  padding: 0px 20px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
-  background: linear-gradient(to top, #67c7ff, #fd57bf);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #31c29e;
 }
 
-#welcome-section {
-  margin: 0 auto;
-  padding-top: 120px;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  padding: 120px 0;
+.cta button {
+  padding: 0px 25px;
+  background-color: rgba(49, 194, 158, 0.8);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: rgba(49, 194, 158, 0.6);
 }
 
 #welcome-section h1,
+.cta button,
 .nav-link {
   font-family: "Lobster", sans-serif;
-  padding: 16px;
-}
-
-#welcome-section h2,
-.about-heading h2 {
-  font-size: 16px;
-  font-weight: 300;
-}
-
-#welcome-section h1,
-.about-heading h1 {
-  font-size: 36px;
 }
 
 .nav-link,
@@ -163,15 +171,54 @@ button {
   font-size: 14px;
 }
 
-li {
-  margin: 32px 0px;
+.logo-container {
+  max-width: 50px;
 }
 
 .logo {
-  width: 100px;
-  max-width: 100%;
-  height: auto;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  margin-right: auto;
 }
+
+/* =========================================================
+WELCOME STYLING
+========================================================= */
+
+#welcome-section {
+  background-color: rgba(41, 21, 49, 0.6);
+  border-radius: 50px;
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  background: linear-gradient(to top, #31c29e 25%, #9d33bb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#welcome-section h1 {
+  padding: 16px;
+}
+
+#welcome-section h2,
+.about-heading h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#welcome-section h1,
+.about-heading h1 {
+  font-size: 36px;
+}
+
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
@@ -235,7 +282,7 @@ li {
 }
 
 /* =========================================================
-PORTFOLIO STYLING
+                    PORTFOLIO STYLING
 ========================================================= */
 
 .portfolio-description .project-tile {
@@ -275,7 +322,7 @@ PORTFOLIO STYLING
 
 .portfolio-description h4 {
   font-size: 14px;
-  color: #fd57bf;
+  color: #9d33bb;
   margin: 6px 0 12px;
 }
 
@@ -310,7 +357,7 @@ PORTFOLIO STYLING
 
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
+  background-color: rgba(157, 51, 187, 1);
   text-transform: uppercase;
   padding: 16px 32px;
   border-radius: 12.8px;
@@ -324,18 +371,18 @@ textarea {
   padding: 16px;
   margin: 6px 0 16px;
   border: none;
-  outline-color: #fd57bf;
+  outline-color: #9d33bb;
   color: #000;
 }
 
 input[type="submit"] {
-  color: #16162d;
-  font-weight: 600;
+  color: #eee;
+  font-weight: 300;
   font-size: 10px;
 }
 
 input[type="submit"]:hover {
-  background-color: #67c7ff;
+  background-color: rgba(157, 51, 187, 0.8);
 }
 
 form,
@@ -345,12 +392,15 @@ textarea {
   width: 100%;
 }
 
-form {
-  margin: 0 auto;
+#contact {
+  padding-bottom: 56px;
 }
-
 form label {
   font-size: 12px;
+}
+
+form {
+  margin: 0 auto;
 }
 
 /* =========================================================
@@ -360,8 +410,8 @@ form label {
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #221c3b;
-  padding: 32px 0px;
+  background-color: #171d2d;
+  padding: 12px 0px;
   position: relative;
 }
 
@@ -387,6 +437,10 @@ form label {
 }
 
 @media (min-width: 768px) {
+  .logo-container {
+    max-width: 85px;
+  }
+
   .about .container,
   .portfolio-item {
     flex-direction: row;
@@ -413,7 +467,11 @@ form label {
   }
 
   section {
-    padding: 120px 40px;
+    padding: 120px 40px 0px;
+  }
+
+  #contact {
+    padding-bottom: 120px;
   }
 
   .container {
@@ -440,8 +498,9 @@ form label {
     font-size: 22px;
   }
 
-  .nav-link {
-    font-size: 20px;
+  .nav-link,
+  button {
+    font-size: 18px;
   }
 
   .social-media i {
