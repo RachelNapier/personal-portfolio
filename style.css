@@ -13,12 +13,13 @@ body {
   height: 100%;
   background: url(images/large-background.jpeg) no-repeat fixed;
   background-size: cover;
-  font-family: "Roboto", sans-serif;
+  font-family: '"Roboto"', sans-serif;
 }
 
-p {
+label,
+p,
+a {
   font-size: 12px;
-  font-weight: 300;
 }
 
 h1,
@@ -28,13 +29,17 @@ h4,
 p,
 a,
 label,
-input,
-button {
+button,
+input[type="submit"] {
   color: #eee;
 }
 
-section {
-  padding: 56px 20px 0px;
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 300;
 }
 
 a,
@@ -42,38 +47,27 @@ button {
   text-decoration: none;
 }
 
+section {
+  padding: 118px 20px 0px;
+}
+
 img {
-  width: 100%;
+  border-radius: 10px;
 }
 
 /* =========================================================
                       REUSABLE STYLING
    ========================================================= */
 
-.container {
-  width: 80%;
-  max-width: 768px;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.section-heading h1 {
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: 16px;
-}
 /* Section Heading Lines */
 .section-heading h1::before,
 .section-heading h1::after {
-  content: "";
   position: absolute;
+  content: "";
   bottom: -8px;
   left: 50%;
   transform: translate(-50%);
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(49, 194, 158, 0.75);
 }
 
 .section-heading h1:after {
@@ -89,53 +83,175 @@ img {
   border-radius: 12.8px;
 }
 /* END */
-.section-heading {
-  padding-top: 62px;
+
+.section-heading h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .section-heading h1,
-.section-heading h2 {
-  font-weight: 300;
+.container,
+.section-heading h1,
+.copyright {
+  position: relative;
 }
 
-.section-heading {
+#welcome-section h1,
+input,
+select,
+textarea {
+  padding: 16px;
+}
+
+.section-heading h1,
+.about-heading,
+.portfolio-description h3,
+input[type="submit"] {
+  text-transform: uppercase;
+}
+
+#navbar,
+.nav-list,
+.about .container,
+.about-details .nav-list,
+.portfolio-item {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-description h4,
+.nav-link,
+input[type="submit"],
+button {
+  font-size: 14px;
+}
+
+header,
+nav,
+img,
+form,
+input,
+select,
+textarea,
+.profile-img,
+.portfolio-description,
+.copyright {
+  width: 100%;
+}
+
+#welcome-section,
+.container,
+form {
+  margin: 0 auto;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+h1 {
+  color: #31c29e;
+}
+
+.portfolio-description h3,
+.about-heading h1 {
+  opacity: 0.5;
+}
+
+#welcome-section,
+.container {
+  width: 90%;
+  max-width: 768px;
+}
+
+#welcome-section h1,
+.portfolio h1,
+.contact h1 {
+  font-family: "Kaushan Script", sans-serif;
+}
+
+#welcome-section,
+.about-heading,
+.section-heading,
+.text-align,
+.copyright {
   text-align: center;
-  margin-bottom: 32px;
 }
 
-.section-heading h2 {
+#welcome-section h2,
+.about-heading h2,
+.portfolio-description h3 {
   font-size: 16px;
 }
 
-/* =========================================================
-                        HEADER STYLING
-   ========================================================= */
+.about-details,
+.profile-img,
+.profile-img,
+.portfolio-description {
+  flex: 1;
+}
 
-header {
-  display: flex;
+input,
+select,
+textarea,
+.cta button {
+  border: none;
+}
+
+.cta button,
+.logo,
+.portfolio-img {
+  cursor: pointer;
+}
+
+.section-heading,
+.about-heading {
+  margin-bottom: 32px;
+}
+
+.about .container,
+.about-details .nav-list,
+.portfolio-item {
+  justify-content: center;
+}
+
+#section-heading h1 .portfolio-img,
+.logo {
+  margin-bottom: 16px;
+}
+
+.about .container,
+.portfolio-item {
+  flex-direction: column;
+}
+
+input[type="submit"],
+.portfolio-description .project-tile,
+.social-media i {
+  transition: color 650ms;
+}
+
+.container {
+  height: 100%;
+}
+
+/* =========================================================
+                      HEADER STYLING
+========================================================= */
+
+#navbar {
   top: 0;
   left: 0;
-  width: 100%;
   height: 55px;
   position: fixed;
   z-index: 100;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 10px;
-  background-color: #291531;
+  justify-content: space-around;
+  padding: 12px 6px;
+  background-color: #2e1a35;
 }
 
-header nav ul {
-  align-items: center;
-  padding: 12px 10px;
-}
-
-.nav-list {
-  list-style: none;
-}
-
-.nav-list li {
-  display: inline-block;
+.cta button {
+  padding: 0px 25px;
+  background-color: rgba(49, 194, 158, 0.8);
+  border-radius: 50px;
 }
 
 .nav-list li a {
@@ -143,57 +259,32 @@ header nav ul {
   padding: 0px 20px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #31c29e;
-}
-
-.cta button {
-  padding: 0px 25px;
-  background-color: rgba(49, 194, 158, 0.8);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
+.nav-list,
+.logo {
+  list-style: none;
 }
 
 .cta button:hover {
   background-color: rgba(49, 194, 158, 0.6);
 }
 
-#welcome-section h1,
-.cta button,
-.nav-link {
-  font-family: "Lobster", sans-serif;
-}
-
-.nav-link,
-button {
-  font-size: 14px;
+.logo {
+  height: 45px;
 }
 
 .logo-container {
-  max-width: 50px;
-}
-
-.logo {
-  cursor: pointer;
-  width: 100%;
-  height: 45px;
-  margin-right: auto;
+  max-width: 55px;
 }
 
 /* =========================================================
-WELCOME STYLING
+                      WELCOME STYLING
 ========================================================= */
 
 #welcome-section {
   background-color: rgba(41, 21, 49, 0.6);
-  border-radius: 50px;
-  margin: 0 auto;
-  padding-top: 120px;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
+  height: 450px;
+  border-radius: 25px;
+  padding-top: 118px;
 }
 
 #welcome-section h1 {
@@ -202,16 +293,7 @@ WELCOME STYLING
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-}
-
-#welcome-section h1 {
-  padding: 16px;
-}
-
-#welcome-section h2,
-.about-heading h2 {
-  font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 #welcome-section h1,
@@ -219,48 +301,76 @@ WELCOME STYLING
   font-size: 36px;
 }
 
+#welcome-section h2 {
+  padding-bottom: 46px;
+}
+
+/* Down Arrows */
+.arrows {
+  width: 60px;
+  height: 72px;
+}
+
+.arrows path {
+  stroke: #2994d1;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+/* End */
+
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
 
-.about .container,
-.about-details .nav-list {
-  display: flex;
-}
-
-.about .container {
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .about-heading {
-  text-align: center;
-  text-transform: uppercase;
   line-height: 0;
-  margin-bottom: 32px;
-}
-
-.about-heading h1 {
-  opacity: 0.6;
-}
-
-.profile-img {
-  margin: 0 0 48px;
-}
-
-.about-details,
-.profile-img {
-  flex: 1;
 }
 
 .about-details .nav-list {
   flex-direction: row;
 }
 
-.about-details li {
-  margin: 0 16px;
-  align-items: center;
+.profile-img {
+  margin-bottom: 72px;
 }
 
 .social-media {
@@ -269,7 +379,6 @@ WELCOME STYLING
 
 .social-media i {
   font-size: 32px;
-  transition: color 650ms;
 }
 
 .fa-twitter-square:hover,
@@ -288,22 +397,7 @@ WELCOME STYLING
 .portfolio-description .project-tile {
   display: inline-block;
   margin-top: 12px;
-  font-size: 12px;
   color: #67c7ff;
-  transition: color 650ms;
-}
-
-.portfolio-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 56px;
-}
-
-.portfolio-img {
-  margin-bottom: 16px;
-  border-radius: 10px;
 }
 
 .portfolio-img img {
@@ -317,30 +411,20 @@ WELCOME STYLING
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   box-shadow: 10px 10px 5px #888888;
-  cursor: pointer;
+}
+
+.portfolio-item {
+  margin-bottom: 56px;
+}
+
+.portfolio h1,
+.contact h1 {
+  opacity: 0.8;
 }
 
 .portfolio-description h4 {
-  font-size: 14px;
-  color: #9d33bb;
+  color: #c672dd;
   margin: 6px 0 12px;
-}
-
-.portfolio-description h3 {
-  font-size: 16px;
-  text-transform: uppercase;
-  opacity: 0.6;
-}
-
-.profile-img,
-.portfolio-description {
-  flex: 1;
-  width: 100%;
-}
-
-.portfolio-description h3,
-.portfolio-description h4 {
-  font-weight: 300;
 }
 
 .portfolio-description .project-tile:hover {
@@ -357,50 +441,30 @@ WELCOME STYLING
 
 input[type="submit"] {
   width: initial;
-  background-color: rgba(157, 51, 187, 1);
-  text-transform: uppercase;
-  padding: 16px 32px;
-  border-radius: 12.8px;
+  background-color: rgba(198, 114, 221, 0.8);
+  padding: 20px 40px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 650ms;
 }
 
 input,
 select,
 textarea {
-  padding: 16px;
   margin: 6px 0 16px;
-  border: none;
-  outline-color: #9d33bb;
+  outline-color: #c672dd;
   color: #000;
 }
 
 input[type="submit"] {
-  color: #eee;
-  font-weight: 300;
   font-size: 10px;
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(157, 51, 187, 0.8);
-}
-
-form,
-input,
-select,
-textarea {
-  width: 100%;
+  background-color: rgba(198, 114, 221, 0.6);
 }
 
 #contact {
-  padding-bottom: 56px;
-}
-form label {
-  font-size: 12px;
-}
-
-form {
-  margin: 0 auto;
+  padding-bottom: 118px;
 }
 
 /* =========================================================
@@ -408,11 +472,8 @@ form {
    ========================================================= */
 
 .copyright {
-  width: 100%;
-  text-align: center;
   background-color: #171d2d;
   padding: 12px 0px;
-  position: relative;
 }
 
 /* =========================================================
@@ -432,11 +493,15 @@ form {
 @media (min-width: 768px) and (max-width: 1024px) {
   .profile-img,
   .portfolio-img {
-    min-width: 450px;
+    min-width: 400px;
   }
 }
 
 @media (min-width: 768px) {
+  #welcome-section {
+    height: 100vh;
+  }
+
   .logo-container {
     max-width: 85px;
   }
@@ -452,18 +517,13 @@ form {
   }
 
   .portfolio-description .project-tile,
-  form label,
-  p {
-    font-size: 16px;
+  form label {
+    font-size: 18px;
   }
 
   .margin-right,
   .profile-img {
     margin-right: 40px;
-  }
-
-  input[type="submit"] {
-    font-size: 14px;
   }
 
   section {
@@ -474,6 +534,7 @@ form {
     padding-bottom: 120px;
   }
 
+  #welcome-section,
   .container {
     max-width: 1200px;
   }
@@ -501,6 +562,10 @@ form {
   .nav-link,
   button {
     font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   .social-media i {
