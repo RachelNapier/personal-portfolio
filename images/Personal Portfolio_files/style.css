@@ -1,0 +1,526 @@
+/* =========================================================
+                        GLOBAL STYLING
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: url(images/background.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+label,
+input,
+button {
+  color: #eee;
+}
+
+section {
+  padding: 56px 20px 0px;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* =========================================================
+                      REUSABLE STYLING
+   ========================================================= */
+
+.container {
+  width: 80%;
+  max-width: 768px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-heading h1 {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 16px;
+}
+/* Section Heading Lines */
+.section-heading h1::before,
+.section-heading h1::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.section-heading h1:after {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  bottom: -15px;
+}
+
+.section-heading h1::before {
+  width: 100px;
+  height: 3px;
+  border-radius: 12.8px;
+}
+/* END */
+.section-heading {
+  padding-top: 62px;
+}
+
+.section-heading h1,
+.section-heading h2 {
+  font-weight: 300;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  font-size: 16px;
+}
+
+/* =========================================================
+                        HEADER STYLING
+   ========================================================= */
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  background-color: #1c1431;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-list li a {
+  transition: 0.2 ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #31c29e;
+}
+
+button {
+  padding: 0px 25px;
+  background-color: rgba(157, 51, 187, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(157, 51, 187, 0.8);
+}
+
+#welcome-section h1 {
+  background: linear-gradient(to top, #31c29e 25%, #9d33bb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#welcome-section h1,
+.nav-link,
+button {
+  font-family: "Lobster", sans-serif;
+}
+
+.nav-link,
+button {
+  font-size: 14px;
+}
+
+.logo-container {
+  max-width: 50px;
+}
+
+.logo {
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+}
+
+/* =========================================================
+                      WELCOME STYLING
+   ========================================================= */
+
+#welcome-section {
+  margin: 0 auto;
+  padding-top: 120px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  padding: 16px;
+}
+
+#welcome-section h2,
+.about-heading h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#welcome-section h1,
+.about-heading h1 {
+  font-size: 36px;
+}
+
+/* =========================================================
+                      ABOUT STYLING
+   ========================================================= */
+
+.about .container,
+.about-details .nav-list {
+  display: flex;
+}
+
+.about .container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 32px;
+}
+
+.about-heading h1 {
+  opacity: 0.6;
+}
+
+.profile-img {
+  margin: 0 0 48px;
+}
+
+.about-details,
+.profile-img {
+  flex: 1;
+}
+
+.about-details .nav-list {
+  flex-direction: row;
+}
+
+.about-details li {
+  margin: 0 16px;
+  align-items: center;
+}
+
+.social-media {
+  margin-top: 32px;
+}
+
+.social-media i {
+  font-size: 32px;
+  transition: color 650ms;
+}
+
+.fa-twitter-square:hover,
+.fa-linkedin-square:hover {
+  color: #38a1f3;
+}
+
+.fa-github-square:hover {
+  color: #808080;
+}
+
+/* =========================================================
+                    PORTFOLIO STYLING
+========================================================= */
+
+.portfolio-description .project-tile {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #67c7ff;
+  transition: color 650ms;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.portfolio-img {
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.portfolio-img img {
+  border-radius: 5px;
+}
+
+.portfolio-img:hover {
+  transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  box-shadow: 10px 10px 5px #888888;
+  cursor: pointer;
+}
+
+.portfolio-description h4 {
+  font-size: 14px;
+  color: #9d33bb;
+  margin: 6px 0 12px;
+}
+
+.portfolio-description h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.profile-img,
+.portfolio-description {
+  flex: 1;
+  width: 100%;
+}
+
+.portfolio-description h3,
+.portfolio-description h4 {
+  font-weight: 300;
+}
+
+.portfolio-description .project-tile:hover {
+  color: #2167cd;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+                    CONTACT/FORM STYLING
+   ========================================================= */
+
+input[type="submit"] {
+  width: initial;
+  background-color: rgba(157, 51, 187, 1);
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 12.8px;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input,
+select,
+textarea {
+  padding: 16px;
+  margin: 6px 0 16px;
+  border: none;
+  outline-color: #9d33bb;
+  color: #000;
+}
+
+input[type="submit"] {
+  color: #eee;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #31c29e;
+}
+
+form,
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+#contact {
+  padding-bottom: 56px;
+}
+form label {
+  font-size: 12px;
+}
+
+form {
+  margin: 0 auto;
+}
+
+/* =========================================================
+                    FOOTER STYLING
+   ========================================================= */
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #1c1431;
+  padding: 12px 0px;
+  position: relative;
+}
+
+/* =========================================================
+                  RESPONSIVE STYLING
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .portfolio-img {
+    order: 1;
+  }
+
+  .portfolio-description {
+    order: 2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profile-img,
+  .portfolio-img {
+    min-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: flex-end;
+  }
+
+  .logo-container {
+    max-width: 85px;
+    margin-right: auto;
+  }
+
+  .about .container,
+  .portfolio-item {
+    flex-direction: row;
+  }
+
+  .section-heading h2,
+  .portfolio-description h3 {
+    font-size: 26px;
+  }
+
+  .portfolio-description .project-tile,
+  form label,
+  p {
+    font-size: 16px;
+  }
+
+  .margin-right,
+  .profile-img {
+    margin-right: 40px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 120px 40px 0px;
+  }
+
+  #contact {
+    padding-bottom: 120px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  #welcome-section h1 {
+    font-size: 72px;
+  }
+
+  #welcome-section h2 {
+    font-size: 36px;
+  }
+
+  .section-heading h1 {
+    font-size: 32px;
+  }
+
+  .about-heading h1 {
+    font-size: 62px;
+  }
+
+  .portfolio-description h4 {
+    font-size: 22px;
+  }
+
+  .nav-link,
+  button {
+    font-size: 18px;
+  }
+
+  .social-media i {
+    font-size: 42px;
+  }
+
+  .portfolio-item {
+    margin-top: 80px;
+  }
+
+  li {
+    margin: 0px 48px;
+  }
+
+  .about-details li {
+    margin: 0 32px;
+  }
+
+  form {
+    width: 70%;
+  }
+}
