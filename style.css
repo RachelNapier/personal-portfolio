@@ -502,8 +502,8 @@ input[type="submit"]:hover {
     height: 100vh;
   }
 
-  .logo-container {
-    max-width: 85px;
+  #welcome-section h2 {
+    padding-bottom: 120px;
   }
 
   .about .container,
@@ -521,9 +521,22 @@ input[type="submit"]:hover {
     font-size: 18px;
   }
 
+  #welcome-section,
+  .container {
+    max-width: 1200px;
+  }
+
   .margin-right,
   .profile-img {
     margin-right: 40px;
+  }
+
+  .logo-container {
+    max-width: 85px;
+  }
+
+  form {
+    width: 70%;
   }
 
   section {
@@ -532,11 +545,6 @@ input[type="submit"]:hover {
 
   #contact {
     padding-bottom: 120px;
-  }
-
-  #welcome-section,
-  .container {
-    max-width: 1200px;
   }
 
   #welcome-section h1 {
@@ -582,9 +590,5 @@ input[type="submit"]:hover {
 
   .about-details li {
     margin: 0 32px;
-  }
-
-  form {
-    width: 70%;
   }
 }
