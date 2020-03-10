@@ -18,7 +18,7 @@ body {
 
 label,
 p,
-a {
+.project-tile {
   font-size: 12px;
 }
 
@@ -38,7 +38,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+.project-tile {
   font-weight: 300;
 }
 
@@ -106,6 +107,7 @@ textarea {
 .section-heading h1,
 .about-heading,
 .portfolio-description h3,
+.project-tile,
 input[type="submit"] {
   text-transform: uppercase;
 }
@@ -207,6 +209,11 @@ textarea,
   margin-bottom: 32px;
 }
 
+.section-heading {
+  border-top: 1px solid rgba(238, 238, 238, 0.6);
+  padding-top: 32px;
+}
+
 .about .container,
 .about-details .nav-list,
 .portfolio-item {
@@ -226,7 +233,12 @@ textarea,
 input[type="submit"],
 .portfolio-description .project-tile,
 .social-media i {
-  transition: color 650ms;
+  transition: all 350ms;
+}
+
+.social-media i:hover,
+.project-tile:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -394,12 +406,6 @@ input[type="submit"],
                     PORTFOLIO STYLING
 ========================================================= */
 
-.portfolio-description .project-tile {
-  display: inline-block;
-  margin-top: 12px;
-  color: #67c7ff;
-}
-
 .portfolio-img img {
   border-radius: 5px;
 }
@@ -422,17 +428,32 @@ input[type="submit"],
   opacity: 0.8;
 }
 
+.portfolio-description h3 {
+  padding-top: 16px;
+}
+
 .portfolio-description h4 {
   color: #c672dd;
   margin: 6px 0 12px;
 }
 
-.portfolio-description .project-tile:hover {
-  color: #2167cd;
+.project-tile {
+  display: inline-block;
+
+  margin-top: 12px;
+  color: #2994d1;
+}
+
+.project-tile:hover {
+  font-weight: 700;
 }
 
 .portfolio-item:last-child {
   margin-bottom: 0;
+}
+
+.fa {
+  display: inline;
 }
 
 /* =========================================================
@@ -455,12 +476,8 @@ textarea {
   color: #000;
 }
 
-input[type="submit"] {
-  font-size: 10px;
-}
-
 input[type="submit"]:hover {
-  background-color: rgba(198, 114, 221, 0.6);
+  background-color: rgba(198, 114, 221, 0.5);
 }
 
 #contact {
@@ -494,6 +511,7 @@ input[type="submit"]:hover {
   .profile-img,
   .portfolio-img {
     min-width: 400px;
+    max-width: 400px;
   }
 }
 
@@ -516,11 +534,6 @@ input[type="submit"]:hover {
     font-size: 26px;
   }
 
-  .portfolio-description .project-tile,
-  form label {
-    font-size: 18px;
-  }
-
   #welcome-section,
   .container {
     max-width: 1200px;
@@ -540,7 +553,7 @@ input[type="submit"]:hover {
   }
 
   section {
-    padding: 120px 40px 0px;
+    padding: 200px 40px 0px;
   }
 
   #contact {
@@ -567,13 +580,18 @@ input[type="submit"]:hover {
     font-size: 22px;
   }
 
-  .nav-link,
-  button {
-    font-size: 18px;
+  .nav-link {
+    font-size: 12px;
   }
 
-  p {
-    font-size: 16px;
+  p,
+  form label,
+  .project-tile {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 12px;
   }
 
   .social-media i {
