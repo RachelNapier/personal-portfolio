@@ -9,10 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!---- Google Fonts ---->
     <link
       href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway|Alata|Roboto|Open+Sans:300&display=swap"
+      rel="stylesheet"
+    />
+    <!---- End ---->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,12 +30,12 @@
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <img class="logo" src="images/logo.png" alt="logo" />
-      </div>
       <nav id="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
           <i class="fas fa-bars"></i>
+          <div class="logo-container">
+            <img class="logo" src="images/logo.jpg" alt="logo" />
+          </div>
         </span>
         <ul class="nav-list">
           <li>
@@ -40,9 +47,11 @@
           <li>
             <a href="#projects" class="nav-link">Portfolio</a>
           </li>
+          <li>
+            <a href="#contact" class="cta"><button>Contact</button></a>
+          </li>
         </ul>
       </nav>
-      <a href="#contact" class="cta"><button>Contact</button></a>
     </header>
     <section id="home">
       <div id="welcome-section">
@@ -57,6 +66,11 @@
           ></span>
         </h2>
         <!---- End ---->
+        <svg class="arrows">
+          <path class="a1" d="M0 0 L30 32 L60 0"></path>
+          <path class="a2" d="M0 20 L30 52 L60 20"></path>
+          <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
       </div>
     </section>
     <section class="about" id="about">
