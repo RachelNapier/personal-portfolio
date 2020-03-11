@@ -48,10 +48,6 @@ button {
   text-decoration: none;
 }
 
-section {
-  padding: 118px 20px 0px;
-}
-
 img {
   border-radius: 10px;
 }
@@ -209,11 +205,6 @@ textarea,
   margin-bottom: 32px;
 }
 
-.section-heading {
-  border-top: 1px solid rgba(238, 238, 238, 0.6);
-  padding-top: 32px;
-}
-
 .about .container,
 .about-details .nav-list,
 .portfolio-item {
@@ -231,7 +222,7 @@ textarea,
 }
 
 input[type="submit"],
-.portfolio-description .project-tile,
+.project-tile,
 .social-media i {
   transition: all 350ms;
 }
@@ -243,6 +234,8 @@ input[type="submit"],
 
 .container {
   height: 100%;
+  padding: 72px 20px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
 }
 
 /* =========================================================
@@ -296,7 +289,8 @@ input[type="submit"],
   background-color: rgba(41, 21, 49, 0.6);
   height: 450px;
   border-radius: 25px;
-  padding-top: 118px;
+  padding-top: 100px;
+  margin-top: 100px;
 }
 
 #welcome-section h1 {
@@ -305,7 +299,7 @@ input[type="submit"],
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #welcome-section h1,
@@ -387,19 +381,29 @@ input[type="submit"],
 
 .social-media {
   margin-top: 32px;
+  display: block;
 }
 
 .social-media i {
   font-size: 32px;
 }
 
-.fa-twitter-square:hover,
-.fa-linkedin-square:hover {
-  color: #38a1f3;
+.fa-twitter,
+.fa-linkedin,
+.fa-github {
+  padding: 5px 8px;
 }
 
-.fa-github-square:hover {
-  color: #808080;
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github:hover {
+  background-color: #5a32a3;
 }
 
 /* =========================================================
@@ -480,8 +484,8 @@ input[type="submit"]:hover {
   background-color: rgba(198, 114, 221, 0.5);
 }
 
-#contact {
-  padding-bottom: 118px;
+#contact .container {
+  border-bottom: none;
 }
 
 /* =========================================================
@@ -544,6 +548,12 @@ input[type="submit"]:hover {
     margin-right: 40px;
   }
 
+  .fa-twitter,
+  .fa-linkedin,
+  .fa-github {
+    padding: 10px 14px;
+  }
+
   .logo-container {
     max-width: 85px;
   }
@@ -552,8 +562,12 @@ input[type="submit"]:hover {
     width: 70%;
   }
 
-  section {
-    padding: 200px 40px 0px;
+  .container {
+    padding: 100px 40px;
+  }
+
+  .profile-img {
+    padding-bottom: 0;
   }
 
   #contact {
