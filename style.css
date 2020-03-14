@@ -154,12 +154,13 @@ form {
 
 .nav-link:hover,
 .nav-link:focus,
-h1 {
+.about-details h2,
+.portfolio h1,
+.contact h1 {
   color: #31c29e;
 }
 
-.portfolio-description h3,
-.about-heading h1 {
+.portfolio-description h3 {
   opacity: 0.5;
 }
 
@@ -179,14 +180,14 @@ h1 {
 .about-heading,
 .section-heading,
 .text-align,
+.copyright,
 #circ,
-#circ ul li,
-.copyright {
+#circ ul li {
   text-align: center;
 }
 
 #welcome-section h2,
-.about-heading h2,
+.about-heading h1,
 .portfolio-description h3 {
   font-size: 16px;
 }
@@ -208,13 +209,12 @@ textarea,
 .cta button,
 .logo,
 .portfolio-img,
-input[type="submit"],
-#circ ul li {
+#circ ul li,
+input[type="submit"] {
   cursor: pointer;
 }
 
-.section-heading,
-.about-heading {
+.section-heading {
   margin-bottom: 32px;
 }
 
@@ -224,7 +224,7 @@ input[type="submit"],
   justify-content: center;
 }
 
-#section-heading h1 .portfolio-img,
+#section-heading h1,
 .logo {
   margin-bottom: 16px;
 }
@@ -234,9 +234,9 @@ input[type="submit"],
   flex-direction: column;
 }
 
-input[type="submit"],
 .project-tile,
-.social-media i {
+.social-media i,
+input[type="submit"] {
   transition: all 350ms;
 }
 
@@ -253,7 +253,7 @@ input[type="submit"],
 
 .container {
   height: 100%;
-  padding: 72px 20px;
+  padding: 72px 40px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.6);
 }
 
@@ -324,7 +324,7 @@ input[type="submit"],
 }
 
 #welcome-section h1,
-.about-heading h1 {
+.about-heading h2 {
   font-size: 36px;
 }
 
@@ -403,16 +403,28 @@ input[type="submit"],
                       ABOUT STYLING
    ========================================================= */
 
-.about-heading {
-  line-height: 0;
-}
-
 .about-details .nav-list {
   flex-direction: row;
 }
 
+.about-heading {
+  margin-bottom: 16px;
+}
+
+.about-heading h1 {
+  margin-bottom: -8px;
+  font-weight: 500;
+
+  text-shadow: 0px 3px 0px #c672dd, 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-heading h2 {
+  position: relative;
+  z-index: -100;
+}
 .profile-img {
-  margin-bottom: 72px;
+  margin-bottom: 32px;
 }
 
 .social-media {
@@ -464,6 +476,7 @@ input[type="submit"],
 }
 
 .portfolio h1,
+.about-heading h2,
 .contact h1 {
   opacity: 0.8;
 }
@@ -563,7 +576,7 @@ input[type="submit"]:hover {
                   RESPONSIVE STYLING
    ========================================================= */
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .portfolio-img {
     order: 1;
   }
@@ -577,11 +590,11 @@ input[type="submit"]:hover {
   .profile-img,
   .portfolio-img {
     min-width: 400px;
-    max-width: 400px;
+    max-width: 600px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .icon {
     margin-top: 20px;
     font-size: 32px;
@@ -655,7 +668,7 @@ input[type="submit"]:hover {
     font-size: 32px;
   }
 
-  .about-heading h1 {
+  .about-heading h2 {
     font-size: 62px;
   }
 
