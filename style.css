@@ -48,10 +48,6 @@ button {
   text-decoration: none;
 }
 
-img {
-  border-radius: 10px;
-}
-
 /* =========================================================
                       REUSABLE STYLING
    ========================================================= */
@@ -125,7 +121,6 @@ input[type="submit"] {
 
 .portfolio-description h4,
 .nav-link,
-input[type="submit"],
 button {
   font-size: 14px;
 }
@@ -399,6 +394,10 @@ input[type="submit"] {
 }
 /* End */
 
+.txt-type {
+  border-right: 0.1px solid #777;
+}
+
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
@@ -413,8 +412,6 @@ input[type="submit"] {
 
 .about-heading h1 {
   margin-bottom: -8px;
-  font-weight: 500;
-
   text-shadow: 0px 3px 0px #c672dd, 0px 14px 10px rgba(0, 0, 0, 0.15),
     0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
 }
@@ -423,8 +420,13 @@ input[type="submit"] {
   position: relative;
   z-index: -100;
 }
+
 .profile-img {
   margin-bottom: 32px;
+}
+
+.profile-img img {
+  border-radius: 60%;
 }
 
 .social-media {
@@ -458,17 +460,13 @@ input[type="submit"] {
                     PORTFOLIO STYLING
 ========================================================= */
 
-.portfolio-img img {
-  border-radius: 5px;
-}
-
 .portfolio-img:hover {
   transition: 0.5s;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 0 0 20px #31c29e;
 }
 
 .portfolio-item {
@@ -590,7 +588,7 @@ input[type="submit"]:hover {
   .profile-img,
   .portfolio-img {
     min-width: 400px;
-    max-width: 600px;
+    max-width: 480px;
   }
 }
 
@@ -677,7 +675,7 @@ input[type="submit"]:hover {
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   p,
