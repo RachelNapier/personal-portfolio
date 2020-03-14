@@ -48,6 +48,10 @@ button {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
 /* =========================================================
                       REUSABLE STYLING
    ========================================================= */
@@ -81,6 +85,12 @@ button {
   border-radius: 12.8px;
 }
 /* END */
+
+.container {
+  height: 100%;
+  padding: 72px 40px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+}
 
 .section-heading h1 {
   font-size: 24px;
@@ -155,7 +165,8 @@ form {
   color: #31c29e;
 }
 
-.portfolio-description h3 {
+.portfolio-description h3,
+.about-heading h2 {
   opacity: 0.5;
 }
 
@@ -179,12 +190,6 @@ form {
 #circ,
 #circ ul li {
   text-align: center;
-}
-
-#welcome-section h2,
-.about-heading h1,
-.portfolio-description h3 {
-  font-size: 16px;
 }
 
 .about-details,
@@ -246,10 +251,9 @@ input[type="submit"] {
   display: block;
 }
 
-.container {
-  height: 100%;
-  padding: 72px 40px;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+.portfolio h1,
+.contact h1 {
+  opacity: 0.8;
 }
 
 /* =========================================================
@@ -310,7 +314,7 @@ input[type="submit"] {
 }
 
 #welcome-section h1 {
-  background: linear-gradient(to top, #31c29e 25%, #9d33bb);
+  background: linear-gradient(to top, #de8ad5 25%, #31c29e);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -318,8 +322,7 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-#welcome-section h1,
-.about-heading h2 {
+#welcome-section h1 {
   font-size: 36px;
 }
 
@@ -411,14 +414,16 @@ input[type="submit"] {
 }
 
 .about-heading h1 {
-  margin-bottom: -8px;
-  text-shadow: 0px 3px 0px #c672dd, 0px 14px 10px rgba(0, 0, 0, 0.15),
-    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  margin-bottom: -10px;
+  text-shadow: 1px 1px #212121, 2px 2px #212121, 3px 3px #212121;
 }
 
 .about-heading h2 {
+  font-size: 52px;
   position: relative;
   z-index: -100;
+  opacity: 0.8;
 }
 
 .profile-img {
@@ -466,17 +471,11 @@ input[type="submit"] {
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
-  box-shadow: 0 0 20px #31c29e;
+  box-shadow: 0 0 20px #add8e6;
 }
 
 .portfolio-item {
   margin-bottom: 56px;
-}
-
-.portfolio h1,
-.about-heading h2,
-.contact h1 {
-  opacity: 0.8;
 }
 
 .portfolio-description h3 {
@@ -484,13 +483,14 @@ input[type="submit"] {
 }
 
 .portfolio-description h4 {
-  color: #c672dd;
+  color: #de8ad5;
+  font-size: 18px;
   margin: 6px 0 12px;
 }
 
 .project-tile {
   margin-top: 12px;
-  color: #2994d1;
+  color: #add8e6;
 }
 
 .project-tile:hover {
@@ -507,7 +507,7 @@ input[type="submit"] {
 
 input[type="submit"] {
   width: initial;
-  background-color: rgba(198, 114, 221, 0.8);
+  background-color: rgba(222, 138, 213, 0.8);
   padding: 20px 40px;
   border-radius: 12px;
 }
@@ -516,12 +516,12 @@ input,
 select,
 textarea {
   margin: 6px 0 16px;
-  outline-color: #c672dd;
+  outline-color: #de8ad5;
   color: #000;
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(198, 114, 221, 0.5);
+  background-color: rgba(222, 138, 213, 0.5);
 }
 
 #contact .container {
@@ -610,6 +610,7 @@ input[type="submit"]:hover {
 
   #welcome-section h2 {
     padding-bottom: 120px;
+    font-size: 42px;
   }
 
   .about .container,
@@ -658,27 +659,27 @@ input[type="submit"]:hover {
     font-size: 72px;
   }
 
-  #welcome-section h2 {
-    font-size: 36px;
-  }
-
   .section-heading h1 {
     font-size: 32px;
   }
 
+  .about-heading h1 {
+    font-size: 24px;
+  }
+
   .about-heading h2 {
-    font-size: 62px;
+    font-size: 82px;
   }
 
   .portfolio-description h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
-  .nav-link {
+  .nav-link,
+  section p {
     font-size: 16px;
   }
 
-  p,
   form label,
   .project-tile {
     font-size: 14px;
