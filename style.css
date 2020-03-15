@@ -523,7 +523,7 @@ input[type="submit"]:hover {
 
 .icon {
   font-size: 24px;
-  margin-top: 14px;
+  line-height: 50px;
   color: #004d40;
 }
 
@@ -587,7 +587,6 @@ input[type="submit"]:hover {
 
 @media (min-width: 1024px) {
   .icon {
-    margin-top: 20px;
     font-size: 32px;
   }
 
