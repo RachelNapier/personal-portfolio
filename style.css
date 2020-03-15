@@ -16,9 +16,9 @@ body {
   font-family: '"Roboto"', sans-serif;
 }
 
+.project-tile,
 label,
-p,
-.project-tile {
+section p {
   font-size: 12px;
 }
 
@@ -31,7 +31,7 @@ a,
 label,
 button,
 input[type="submit"] {
-  color: #eee;
+  color: #e8e6e3;
 }
 
 h1,
@@ -93,13 +93,16 @@ p {
 }
 
 .section-heading h1 {
-  font-size: 24px;
   margin-bottom: 16px;
 }
 
 .section-heading h1,
-.container,
+.icon {
+  font-size: 24px;
+}
+
 .section-heading h1,
+.container,
 .copyright,
 #circ ul li {
   position: relative;
@@ -112,8 +115,8 @@ textarea {
   padding: 16px;
 }
 
-.section-heading h1,
 .about-heading,
+.section-heading h1,
 .portfolio-description h3,
 .project-tile,
 input[type="submit"] {
@@ -160,14 +163,18 @@ form {
 .nav-link:hover,
 .nav-link:focus,
 .about-details h2,
-.portfolio h1,
-.contact h1 {
+.section-heading h1 {
   color: #31c29e;
 }
 
 .portfolio-description h3,
 .about-heading h2 {
-  opacity: 0.5;
+  opacity: 0.6;
+}
+
+.portfolio h1,
+.contact h1 {
+  opacity: 0.8;
 }
 
 #welcome-section,
@@ -177,15 +184,14 @@ form {
 }
 
 #welcome-section h1,
-.portfolio h1,
-.contact h1 {
+.section-heading h1 {
   font-family: "Kaushan Script", sans-serif;
 }
 
 #welcome-section,
 .about-heading,
 .section-heading,
-.text-align,
+.about-details p,
 .copyright,
 #circ,
 #circ ul li {
@@ -194,15 +200,14 @@ form {
 
 .about-details,
 .profile-img,
-.profile-img,
 .portfolio-description {
   flex: 1;
 }
 
+.cta button,
 input,
 select,
-textarea,
-.cta button {
+textarea {
   border: none;
 }
 
@@ -236,24 +241,15 @@ input[type="submit"] {
 
 .project-tile,
 .social-media i,
+.icon,
 input[type="submit"] {
   transition: all 350ms;
+  display: block;
 }
 
 .social-media i:hover,
 .nav-list li:hover {
   transform: scale(1.1);
-}
-
-.project-tile,
-.social-media,
-.icon {
-  display: block;
-}
-
-.portfolio h1,
-.contact h1 {
-  opacity: 0.8;
 }
 
 /* =========================================================
@@ -423,7 +419,6 @@ input[type="submit"] {
   font-size: 52px;
   position: relative;
   z-index: -100;
-  opacity: 0.8;
 }
 
 .profile-img {
@@ -438,15 +433,14 @@ input[type="submit"] {
   margin-top: 32px;
 }
 
-.social-media i,
-.icon {
+.social-media i {
   font-size: 32px;
 }
 
 .twitter,
 .linkedin,
 .github {
-  padding: 5px 8px;
+  padding: 6px 20px;
 }
 
 .twitter:hover {
@@ -529,9 +523,9 @@ input[type="submit"]:hover {
 }
 
 .icon {
+  font-size: 24px;
   margin-top: 14px;
   color: #004d40;
-  font-size: 24px;
 }
 
 #circ {
@@ -550,7 +544,7 @@ input[type="submit"]:hover {
   width: 60px;
   height: 60px;
   margin: 0 5px 5px;
-  background: #eee;
+  background: #e8e6e3;
   border: solid 5px #171d2d;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
