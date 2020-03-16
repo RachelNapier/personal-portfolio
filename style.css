@@ -137,7 +137,6 @@ input[type="submit"] {
   align-items: center;
 }
 
-.portfolio-description h4,
 .nav-link,
 button {
   font-size: 14px;
@@ -172,7 +171,6 @@ form {
   color: #31c29e;
 }
 
-.portfolio-description h3,
 .about-heading h2 {
   opacity: 0.6;
 }
@@ -333,7 +331,7 @@ input[type="submit"] {
 
 /* Down Arrows */
 .arrows {
-  margin-top: 550px;
+  margin-top: 650px;
   width: 60px;
   height: 72px;
 }
@@ -479,13 +477,8 @@ input[type="submit"] {
 }
 
 .portfolio-description h3 {
-  padding-top: 16px;
-}
-
-.portfolio-description h4 {
-  color: #de8ad5;
-  font-size: 18px;
-  margin: 6px 0 12px;
+  margin: 12px 0px;
+  color: rgba(222, 138, 213, 0.8);
 }
 
 .project-tile {
@@ -493,6 +486,7 @@ input[type="submit"] {
   color: #add8e6;
 }
 
+.portfolio-description h3,
 .project-tile:hover {
   font-weight: 500;
 }
@@ -604,8 +598,9 @@ input[type="submit"]:hover {
     margin: 0 10px;
   }
 
-  #welcome-headingg h2 {
+  #welcome-heading h2 {
     font-size: 42px;
+    padding-bottom: 24px;
   }
 
   .about .container,
@@ -619,6 +614,7 @@ input[type="submit"]:hover {
   }
 
   #welcome-section,
+  #welcome-heading,
   .container {
     max-width: 1200px;
   }
@@ -652,6 +648,7 @@ input[type="submit"]:hover {
 
   #welcome-heading h1 {
     font-size: 72px;
+    padding: 24px;
   }
 
   .section-heading h1 {
@@ -664,10 +661,6 @@ input[type="submit"]:hover {
 
   .about-heading h2 {
     font-size: 82px;
-  }
-
-  .portfolio-description h4 {
-    font-size: 20px;
   }
 
   .nav-link,
