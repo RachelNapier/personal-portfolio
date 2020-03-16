@@ -52,6 +52,10 @@ p {
   line-height: 1.5;
 }
 
+section {
+  min-height: 100vh;
+}
+
 /* =========================================================
                       REUSABLE STYLING
    ========================================================= */
@@ -108,7 +112,7 @@ p {
   position: relative;
 }
 
-#welcome-section h1,
+#welcome-heading h1,
 input,
 select,
 textarea {
@@ -183,7 +187,7 @@ form {
   max-width: 768px;
 }
 
-#welcome-section h1,
+#welcome-heading h1,
 .section-heading h1 {
   font-family: "Kaushan Script", sans-serif;
 }
@@ -303,8 +307,7 @@ input[type="submit"] {
 #welcome-heading {
   background-color: rgba(41, 21, 49, 0.6);
   border-radius: 25px;
-  padding-top: 100px;
-  margin-top: 100px;
+  margin: 100px 0 24px;
 }
 
 #welcome-section h1 {
@@ -316,12 +319,12 @@ input[type="submit"] {
   font-weight: 700;
 }
 
-#welcome-section h1 {
+#welcome-heading h1 {
   font-size: 36px;
 }
 
-#welcome-section h2 {
-  padding-bottom: 46px;
+#welcome-heading h2 {
+  padding-bottom: 16px;
 }
 
 /* Down Arrows */
@@ -586,7 +589,7 @@ input[type="submit"]:hover {
 
 @media (min-width: 1024px) {
   .icon {
-    line-height: 70px;
+    line-height: 80px;
     font-size: 32px;
   }
 
@@ -596,12 +599,7 @@ input[type="submit"]:hover {
     margin: 0 10px;
   }
 
-  #welcome-section {
-    height: 100vh;
-  }
-
-  #welcome-section h2 {
-    padding-bottom: 120px;
+  #welcome-headingg h2 {
     font-size: 42px;
   }
 
@@ -647,7 +645,7 @@ input[type="submit"]:hover {
     padding-bottom: 0;
   }
 
-  #welcome-section h1 {
+  #welcome-heading h1 {
     font-size: 72px;
   }
 
