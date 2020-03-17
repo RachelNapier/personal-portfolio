@@ -526,8 +526,11 @@ input[type="submit"]:hover {
 
 .icon {
   font-size: 24px;
-  line-height: 50px;
   color: #004d40;
+}
+
+.icon i {
+  line-height: 50px;
 }
 
 #circ {
@@ -563,7 +566,8 @@ input[type="submit"]:hover {
 
 .copyright {
   background-color: #171d2d;
-  padding: 12px 0px;
+  padding: 20px 0;
+  position: relative;
 }
 
 /* =========================================================
@@ -590,8 +594,11 @@ input[type="submit"]:hover {
 
 @media (min-width: 1024px) {
   .icon {
-    line-height: 80px;
     font-size: 32px;
+  }
+
+  .icon i {
+    line-height: 70px;
   }
 
   #circ ul li {
@@ -696,5 +703,9 @@ input[type="submit"]:hover {
 
   .about-details li {
     margin: 0 32px;
+  }
+
+  .copyright {
+    padding: 24px 0;
   }
 }
