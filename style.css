@@ -324,6 +324,7 @@ input[type="submit"] {
   background: linear-gradient(to top, #de8ad5 25%, #31c29e);
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   font-weight: 700;
@@ -419,14 +420,16 @@ input[type="submit"] {
 
 .about-heading h1 {
   font-size: 16px;
-  margin-bottom: -10px;
+  margin-bottom: -12px;
   text-shadow: 1px 1px #212121, 2px 2px #212121, 3px 3px #212121;
+  -moz-text-shadow: 1px 1px #212121, 2px 2px #212121, 3px 3px #212121;
+  -webkit-text-shadow: 1px 1px #212121, 2px 2px #212121, 3px 3px #212121;
 }
 
 .about-heading h2 {
   font-size: 52px;
   position: relative;
-  z-index: -100;
+  z-index: -10;
 }
 
 .twitter,
@@ -473,8 +476,6 @@ input[type="submit"] {
 
 .portfolio-img:hover {
   transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   box-shadow: 0 0 20px #add8e6;
