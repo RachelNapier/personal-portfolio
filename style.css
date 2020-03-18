@@ -21,6 +21,7 @@ body {
 }
 
 .project-tile,
+button,
 label {
   font-size: 14px;
 }
@@ -133,14 +134,11 @@ input[type="submit"] {
 
 .about .container,
 .about-details .nav-list,
-.portfolio-item #navbar,
+.portfolio-item,
+#navbar,
 #navbar .nav-list {
   display: flex;
   align-items: center;
-}
-
-button {
-  font-size: 14px;
 }
 
 header,
@@ -637,6 +635,7 @@ input[type="submit"]:hover {
 
   .nav-list li a {
     padding: 0px;
+    font-size: 16px;
   }
 
   .about .container,
