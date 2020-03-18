@@ -486,7 +486,7 @@ input[type="submit"] {
 }
 
 .portfolio-item {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .portfolio-description h3 {
@@ -662,7 +662,7 @@ input[type="submit"]:hover {
   }
 
   .container {
-    padding: 140px 40px 80px;
+    padding: 160px 40px 80px;
   }
 
   #section-heading h1,
