@@ -21,9 +21,8 @@ body {
 }
 
 .project-tile,
-label,
-section p {
-  font-size: 12px;
+label {
+  font-size: 14px;
 }
 
 h1,
@@ -35,7 +34,7 @@ a,
 label,
 button,
 input[type="submit"] {
-  color: #e8e6e3;
+  color: #dedede;
 }
 
 h1,
@@ -98,7 +97,7 @@ section {
 .container {
   height: 100%;
   padding: 100px 40px 60px;
-  border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+  border-bottom: 1px solid rgba(238, 238, 238, 0.4);
 }
 
 .section-heading h1 {
@@ -278,7 +277,7 @@ input[type="submit"] {
   justify-content: space-around;
   padding: 0 30px;
   background-color: #2e1a35;
-  box-shadow: 0 2px 0 rgba(49, 194, 158, 0.4);
+  border-bottom: 3px solid rgba(222, 138, 213, 0.4);
 }
 
 .cta button {
@@ -577,7 +576,6 @@ input[type="submit"]:hover {
 
 .copyright {
   background-color: #171d2d;
-  border-top: 1px solid rgba(222, 138, 213, 0.4);
   padding: 20px 0;
 }
 
@@ -691,14 +689,14 @@ input[type="submit"]:hover {
     font-size: 82px;
   }
 
-  .nav-link,
-  section p {
-    font-size: 16px;
+  form label,
+  .project-tile,
+  .nav-link {
+    font-size: 14px;
   }
 
-  form label,
-  .project-tile {
-    font-size: 14px;
+  section p {
+    font-size: 20px;
   }
 
   input[type="submit"] {
