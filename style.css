@@ -101,15 +101,6 @@ section {
   border-bottom: 1px solid rgba(238, 238, 238, 0.4);
 }
 
-.section-heading h1 {
-  margin-bottom: 16px;
-}
-
-.section-heading h1,
-.icon {
-  font-size: 24px;
-}
-
 .section-heading h1,
 .container,
 .copyright,
@@ -172,27 +163,6 @@ form {
   color: #31c29e;
 }
 
-.about-heading h2 {
-  opacity: 0.6;
-}
-
-.portfolio h1,
-.contact h1 {
-  opacity: 0.8;
-}
-
-#welcome-section,
-#welcome-heading,
-.container {
-  width: 90%;
-  max-width: 768px;
-}
-
-#welcome-heading h1,
-.section-heading h1 {
-  font-family: "Kaushan Script", sans-serif;
-}
-
 #welcome-section,
 .about-details,
 .section-heading,
@@ -223,29 +193,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.section-heading {
-  margin-bottom: 32px;
-}
-
 .about .container,
 .about-details .nav-list,
 #navbar .nav-list,
 .portfolio-item {
   justify-content: center;
-}
-
-#section-heading h1,
-.section-heading {
-  margin-bottom: 32px;
-}
-
-.about-heading {
-  margin-bottom: 16px;
-}
-
-.about .container,
-.portfolio-item {
-  flex-direction: column;
 }
 
 .project-tile,
@@ -256,9 +208,57 @@ input[type="submit"] {
   display: block;
 }
 
+#welcome-section,
+#welcome-heading,
+.container {
+  width: 90%;
+  max-width: 768px;
+}
+
+.about .container,
+.portfolio-item {
+  flex-direction: column;
+}
+
 .social-media i:hover,
 .nav-list li:hover {
   transform: scale(1.1);
+}
+
+#welcome-heading h1,
+.section-heading h1 {
+  font-family: "Kaushan Script", sans-serif;
+}
+
+.portfolio h1,
+.contact h1 {
+  opacity: 0.8;
+}
+
+#section-heading h1,
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.section-heading h1 {
+  margin-bottom: 16px;
+}
+
+.section-heading h1,
+.icon {
+  font-size: 24px;
+}
+
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.about-heading {
+  margin-bottom: 16px;
+}
+
+.about-heading h2 {
+  opacity: 0.6;
 }
 
 /* =========================================================
@@ -284,11 +284,6 @@ input[type="submit"] {
   border-radius: 50px;
 }
 
-.nav-list li a {
-  transition: 0.2 ease-in-out;
-  padding: 0px 20px;
-}
-
 .nav-list,
 .logo,
 #circ ul {
@@ -306,13 +301,14 @@ input[type="submit"] {
   margin: 6px 24px 0px;
 }
 
+.nav-list li a {
+  transition: 0.2 ease-in-out;
+  padding: 0px 20px;
+}
+
 /* =========================================================
                       WELCOME STYLING
 ========================================================= */
-
-#welcome-section {
-  height: 100vh;
-}
 
 #welcome-heading {
   background: linear-gradient(to right, #171d2d 50%, #2e1a35);
@@ -331,14 +327,6 @@ input[type="submit"] {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   font-weight: 700;
-}
-
-#welcome-heading h1 {
-  font-size: 36px;
-}
-
-#welcome-heading h2 {
-  padding-bottom: 16px;
 }
 
 /* Down Arrows */
@@ -409,6 +397,18 @@ input[type="submit"] {
 }
 /* End */
 
+#welcome-section {
+  height: 100vh;
+}
+
+#welcome-heading h1 {
+  font-size: 36px;
+}
+
+#welcome-heading h2 {
+  padding-bottom: 16px;
+}
+
 .txt-type {
   border-right: 0.1px solid #777;
 }
@@ -416,10 +416,6 @@ input[type="submit"] {
 /* =========================================================
                       ABOUT STYLING
    ========================================================= */
-
-.about-details .nav-list {
-  flex-direction: row;
-}
 
 .about-heading h1 {
   font-size: 16px;
@@ -431,6 +427,16 @@ input[type="submit"] {
   font-size: 52px;
   position: relative;
   z-index: -100;
+}
+
+.twitter,
+.linkedin,
+.github {
+  padding: 6px 20px;
+}
+
+.about-details .nav-list {
+  flex-direction: row;
 }
 
 .profile-img {
@@ -447,12 +453,6 @@ input[type="submit"] {
 
 .social-media i {
   font-size: 32px;
-}
-
-.twitter,
-.linkedin,
-.github {
-  padding: 6px 20px;
 }
 
 .twitter:hover {
@@ -480,8 +480,9 @@ input[type="submit"] {
   box-shadow: 0 0 20px #add8e6;
 }
 
-.portfolio-item {
-  margin-bottom: 100px;
+.portfolio-description h3,
+.project-tile:hover {
+  font-weight: 500;
 }
 
 .portfolio-description h3 {
@@ -489,14 +490,13 @@ input[type="submit"] {
   color: rgba(222, 138, 213, 0.8);
 }
 
+.portfolio-item {
+  margin-bottom: 100px;
+}
+
 .project-tile {
   margin-top: 12px;
   color: #add8e6;
-}
-
-.portfolio-description h3,
-.project-tile:hover {
-  font-weight: 500;
 }
 
 .portfolio-item:last-child {
@@ -506,6 +506,20 @@ input[type="submit"] {
 /* =========================================================
                     CONTACT/FORM STYLING
    ========================================================= */
+
+#circ ul li {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px 5px;
+  background: #e8e6e3;
+  border: solid 5px #171d2d;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
 
 input[type="submit"] {
   width: initial;
@@ -520,6 +534,11 @@ textarea {
   margin: 6px 0 16px;
   outline-color: #de8ad5;
   color: #000;
+}
+
+#circ {
+  max-width: 100%;
+  min-height: 200px;
 }
 
 input[type="submit"]:hover {
@@ -539,27 +558,8 @@ input[type="submit"]:hover {
   line-height: 50px;
 }
 
-#circ {
-  max-width: 100%;
-  min-height: 200px;
-}
-
 #circ ul {
   margin-top: 62px;
-}
-
-#circ ul li {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 60px;
-  height: 60px;
-  margin: 0 5px 5px;
-  background: #e8e6e3;
-  border: solid 5px #171d2d;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 #circ ul li:hover {
@@ -606,36 +606,16 @@ input[type="submit"]:hover {
 }
 
 @media (min-width: 1024px) {
-  #circ ul li {
-    width: 80px;
-    height: 80px;
-    margin: 0 10px;
+  /* REUSABLE STYLING */
+
+  section p {
+    font-size: 20px;
   }
 
-  #welcome-heading h2 {
-    font-size: 42px;
-    padding-bottom: 24px;
-  }
-
-  #welcome-heading {
-    max-width: 768px;
-  }
-
-  .icon {
-    font-size: 32px;
-  }
-
-  .icon i {
-    line-height: 70px;
-  }
-
-  #navbar .nav-list {
-    justify-content: flex-end;
-  }
-
-  .nav-list li a {
-    padding: 0px;
-    font-size: 16px;
+  form label,
+  .project-tile,
+  .nav-link {
+    font-size: 14px;
   }
 
   .about .container,
@@ -648,46 +628,18 @@ input[type="submit"]:hover {
     font-size: 26px;
   }
 
-  #welcome-section,
-  .container {
-    max-width: 1200px;
-  }
-
-  .margin-right,
-  .profile-img {
-    margin-right: 40px;
-  }
-
-  .twitter,
-  .linkedin,
-  .github {
-    padding: 10px 14px;
-  }
-
-  .logo-container {
-    max-width: 85px;
-  }
-
-  form {
-    width: 70%;
-  }
-
-  .container {
-    padding: 160px 40px 80px;
-  }
-
   #section-heading h1,
   .section-heading {
     margin-bottom: 52px;
   }
 
-  .profile-img {
-    padding-bottom: 0;
+  #welcome-section,
+  .container {
+    max-width: 1200px;
   }
 
-  #welcome-heading h1 {
-    font-size: 72px;
-    padding: 24px;
+  .container {
+    padding: 160px 40px 80px;
   }
 
   .section-heading h1 {
@@ -702,35 +654,97 @@ input[type="submit"]:hover {
     font-size: 82px;
   }
 
-  form label,
-  .project-tile,
-  .nav-link {
-    font-size: 14px;
+  /* HEADER STYLING */
+
+  .nav-list li a {
+    padding: 0px;
+    font-size: 16px;
   }
 
-  section p {
-    font-size: 20px;
+  #navbar .nav-list {
+    justify-content: flex-end;
   }
 
-  input[type="submit"] {
-    font-size: 12px;
-  }
-
-  .social-media i {
-    font-size: 42px;
-  }
-
-  .portfolio-item {
-    margin-bottom: 180px;
+  .logo-container {
+    max-width: 85px;
   }
 
   .nav-list li {
     margin: 0px 48px;
   }
 
+  /* WELCOME STYLING */
+
+  #welcome-heading h2 {
+    font-size: 42px;
+    padding-bottom: 24px;
+  }
+
+  #welcome-heading {
+    max-width: 768px;
+  }
+
+  #welcome-heading h1 {
+    font-size: 72px;
+    padding: 24px;
+  }
+
+  /* ABOUT STYLING */
+
+  .twitter,
+  .linkedin,
+  .github {
+    padding: 10px 14px;
+  }
+
+  .margin-right,
+  .profile-img {
+    margin-right: 40px;
+  }
+
+  .profile-img {
+    padding-bottom: 0;
+  }
+
   .about-details li {
     margin: 0 32px;
   }
+
+  .social-media i {
+    font-size: 42px;
+  }
+
+  /* PORTFOLIO STYLING */
+
+  .portfolio-item {
+    margin-bottom: 180px;
+  }
+
+  /* CONTACT STYLING */
+
+  #circ ul li {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 12px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .icon i {
+    line-height: 70px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  /* FOOTER STYLING */
 
   .copyright {
     padding: 24px 0;
