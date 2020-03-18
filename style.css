@@ -60,10 +60,6 @@ section {
   min-height: 100vh;
 }
 
-#welcome-section {
-  height: 100vh;
-}
-
 /* =========================================================
                       REUSABLE STYLING
    ========================================================= */
@@ -241,7 +237,12 @@ input[type="submit"] {
 }
 
 #section-heading h1,
-.logo {
+.section-heading {
+  margin-bottom: 32px;
+}
+
+.logo,
+.about-heading {
   margin-bottom: 16px;
 }
 
@@ -313,6 +314,10 @@ input[type="submit"] {
 /* =========================================================
                       WELCOME STYLING
 ========================================================= */
+
+#welcome-section {
+  height: 100vh;
+}
 
 #welcome-heading {
   background: linear-gradient(to right, #171d2d 50%, #2e1a35);
@@ -419,10 +424,6 @@ input[type="submit"] {
 
 .about-details .nav-list {
   flex-direction: row;
-}
-
-.about-heading {
-  margin-bottom: 16px;
 }
 
 .about-heading h1 {
@@ -661,7 +662,12 @@ input[type="submit"]:hover {
   }
 
   .container {
-    padding: 140px 40px 60px;
+    padding: 140px 40px 80px;
+  }
+
+  #section-heading h1,
+  .section-heading {
+    margin-bottom: 52px;
   }
 
   .profile-img {
@@ -704,7 +710,7 @@ input[type="submit"]:hover {
   }
 
   .portfolio-item {
-    margin-top: 80px;
+    margin-bottom: 180px;
   }
 
   .nav-list li {
