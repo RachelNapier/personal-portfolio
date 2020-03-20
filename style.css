@@ -332,7 +332,7 @@ input[type="submit"] {
 
 /* Down Arrows */
 .arrows {
-  margin-top: 650px;
+  margin-top: 550px;
   width: 60px;
   height: 72px;
 }
@@ -688,6 +688,10 @@ input[type="submit"]:hover {
   #welcome-heading h1 {
     font-size: 72px;
     padding: 24px;
+  }
+
+  .arrows {
+    margin-top: 620px;
   }
 
   /* ABOUT STYLING */
