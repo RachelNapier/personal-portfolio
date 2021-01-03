@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://rachelnapier.github.io/personal-portfolio/">
-    <img src="images/profile-pic.png" alt="Logo" width="80" height="80">
+    <img src="images/profile-pic.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center"><strong>Rachel Napier</strong></h3>
@@ -34,9 +34,31 @@ A fully responsive, personal portfolio, showcasing details about my web-developm
 
 <p align="center"><strong>Desktop navigation version:</strong></p>
 
-![Screenshot](images/sn-1.png)
-![Screenshot](images/sn-3.png)
-![Screenshot](images/sn-2.png)
-![Screenshot](images/sn-4.png)
+![Project Screenshot](images/demo-lg.gif)
 <br>
 <br>
+
+<p align="center"><strong>Mobile navigation version:</strong></
+<br>
+
+<div align="center">
+
+![Project Screenshot](images/demo-sm.gif)
+
+</div>
+
+<!-- CONTRIBUTORS -->
+
+## <strong>Contributors</strong>
+
+Developed by: [Rachel Napier](https://github.com/RachelNapier)<br>
+Partial design from: [Julio Codes](https://www.youtube.com/channel/UCeHWTyAKBv_WnW8gsEKGECw)<br>
+
+<!-- CONTACT -->
+
+## <strong>Contact Me</strong>
+
+LinkedIn: [Rachel Napier](https://www.linkedin.com/in/rachelnapierx/)<br>
+Twitter: [@RachelNapier93](https://twitter.com/RachelNapier93)<br>
+Github: [RachelNapier](https://github.com/RachelNapier)<br>
+Gmail: napier.rachel93@gmail.com
