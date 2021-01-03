@@ -14,7 +14,7 @@
   <h3 align="center"><strong>Rachel Napier</strong></h3>
 
   <p align="center">
-        HTML5, CSS3 & JAVASCRIPT Developer| My Personal Portfolio!
+        HTML5, CSS3 & JAVASCRIPT | Checkout My Progress!
     <br />
     <a href="https://github.com/RachelNapier/personal-portfolio/"><strong>Explore the docs »</strong></a>
     <br />
