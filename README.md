@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://rachelnapier.github.io/personal-portfolio/">
-    <img src="images/profile-pic-2.jpg" alt="Logo" width="80" height="80">
+    <img src="images/profile-pic.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center"><strong>Rachel Napier</strong></h3>
@@ -28,7 +28,7 @@
 
 ## <strong>About This Project:</strong>
 
-A fully responsive, personal portfolio, showcasing details about my web-development progress, containing past projects and contact info. A subtle yet visually appealing starry night theme, containing plenty of CSS3 animations, icons, and some Javascript. Updates are on going. 
+A fully responsive, personal portfolio, showcasing details about my web-development progress, containing past projects and contact info. A subtle yet visually appealing starry night theme, containing plenty of CSS3 animations, icons, and some Javascript. Updates are on going.
 <br>
 <br>
 
