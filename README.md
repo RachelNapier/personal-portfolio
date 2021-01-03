@@ -8,13 +8,13 @@
 <br />
 <p align="center">
   <a href="https://rachelnapier.github.io/personal-portfolio/">
-    <img src="images/profile-pic.png" alt="Logo" width="120" height="120">
+    <img src="images/profile-pic.png" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center"><strong>Rachel Napier</strong></h3>
 
   <p align="center">
-        HTML5, CSS3 & JAVASCRIPT | Rachel Napier's Personal Portfolio!
+        HTML5, CSS3 & JAVASCRIPT Developer| My Personal Portfolio!
     <br />
     <a href="https://github.com/RachelNapier/personal-portfolio/"><strong>Explore the docs »</strong></a>
     <br />
@@ -26,7 +26,7 @@
 
 <!-- ABOUT -->
 
-## <strong>About This Project:</strong>
+## <strong>About:</strong>
 
 A fully responsive, personal portfolio, showcasing details about my web-development progress, containing past projects and contact info. A subtle yet visually appealing starry night theme, containing plenty of CSS3 animations, icons, and some Javascript. Updates are on going.
 <br>
