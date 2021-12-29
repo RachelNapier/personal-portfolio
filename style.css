@@ -274,7 +274,7 @@ input[type="submit"] {
   position: fixed;
   z-index: 100;
   background-color: #2e1a35;
-  border-bottom: 3px solid rgba(222, 138, 213, 0.4);
+  border-bottom: 3px solid rgba(49, 194, 158, 0.6);
   justify-content: space-around;
 }
 
@@ -488,7 +488,7 @@ input[type="submit"] {
 
 .portfolio-description h3 {
   margin: 12px 0px;
-  color: rgba(222, 138, 213, 0.8);
+  color: rgba(49, 194, 158, 0.8);
 }
 
 .portfolio-item {
@@ -524,7 +524,7 @@ input[type="submit"] {
 
 input[type="submit"] {
   width: initial;
-  background-color: rgba(222, 138, 213, 0.8);
+  background-color: rgba(49, 194, 158, 0.8);
   padding: 20px 40px;
   border-radius: 12px;
 }
@@ -533,7 +533,7 @@ input,
 select,
 textarea {
   margin: 6px 0 16px;
-  outline-color: #de8ad5;
+  outline-color: #31c29e;
   color: #000;
 }
 
@@ -543,7 +543,7 @@ textarea {
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(222, 138, 213, 0.5);
+  background-color: rgba(49, 194, 158, 0.6);
 }
 
 #contact .container {
