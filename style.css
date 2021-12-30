@@ -330,6 +330,34 @@ input[type="submit"] {
   font-weight: 700;
 }
 
+/* Typing Animation */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing {
+  width: 9.4em;
+  animation: typing 2s steps(19), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /* Down Arrows */
 .arrows {
   margin-top: 550px;
