@@ -20,18 +20,21 @@ const NavMenuStyles = styled.div`
     li {
       display: inline-block;
       border-radius: 8px;
-      transition: 0.3s easy background-color;
+    }
+    a {
+      display: inline-block;
+      font-family: 'Fira Sans', sans-serif;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      color: var(--primary-color-1);
+      outline: none;
+      transition: 0.3s easy color;
       &:hover {
-        background-color: var(--tertiary-color);
+        color: var(--tertiary-color);
       }
-      a {
-        display: inline-block;
-        font-family: 'RobotoMono Regular';
-        padding: 1rem 2rem;
-        font-size: 2rem;
-        color: var(--primary-color-1);
-        outline: none;
-      }
+    }
+    .active {
+      color: var(--tertiary-color);
     }
   }
 `;
