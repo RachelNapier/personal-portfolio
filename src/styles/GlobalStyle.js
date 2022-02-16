@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     font-size: 10px;
-    font-family: 'Roboto Mono';
+    font-family: 'Fira Sans', sans-serif;
     background-color: var(--dark-bg);
   }
   ul,li{
