@@ -8,9 +8,9 @@ const GlobalStyles = createGlobalStyle`
   }
   :root{
     --main-bg: #EDD8E0;
-    --primary-color-1: #E0B1C3;
-    --secondary-color: #A94F72;
-    --tertiary-color: #8B254C;
+    --primary-color-1: #A94F72;
+    --secondary-color: #8B254C;
+    --tertiary-color: #E0B1C3;
     --white : white;
     --black: black;
   }
