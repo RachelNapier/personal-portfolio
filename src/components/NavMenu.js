@@ -20,6 +20,10 @@ const NavStyles = styled.nav`
     li {
       display: inline-block;
       border-radius: 8px;
+      transition: 0.3s ease background-color;
+      &:hover {
+        background-color: var(--tertiary-color);
+      }
     }
     a {
       display: inline-block;
@@ -34,7 +38,7 @@ const NavStyles = styled.nav`
       }
     }
     .active {
-      color: var(--secondary-color-1);
+      color: var(--secondary-color);
     }
   }
   .mobile-menu-icon {
