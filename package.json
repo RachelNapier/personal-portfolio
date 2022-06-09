@@ -1,0 +1,23 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "<!-- PROJECT SHIELDS -->",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass -o src/styles/css src/styles/sass/main.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RachelNapier/personal-portfolio.git"
+  },
+  "author": "Rachel Napier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RachelNapier/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/RachelNapier/personal-portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
