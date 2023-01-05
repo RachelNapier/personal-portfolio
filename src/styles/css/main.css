@@ -1,5 +1,4 @@
-header {
-  background-color: red; }
-
-body {
-  background-color: red; }
+.navigation {
+  background-color: #fcd5ce; }
+  .navigation__nav a {
+    color: blue; }
