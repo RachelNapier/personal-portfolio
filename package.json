@@ -23,8 +23,8 @@
     "postcss-cli": "^9.1.0"
   },
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "sass": "^1.52.3"
+    "node-sass": "^8.0.0",
+    "sass": "^1.57.1"
   },
   "keywords": [
     "Bootstrap",
