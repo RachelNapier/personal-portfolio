@@ -1,9 +1,18 @@
 .navigation {
-  background-color: $peach-main;
+  background-color: $color-white;
+
+  &__container {
+    justify-content: flex-end;
+  }
 
   &__nav {
     a {
-      color: green;
+      color: $color-dusty-blue-light;
+
+      &:hover,
+      &:active {
+        color: $color-dusty-blue-dark;
+      }
     }
   }
 }
