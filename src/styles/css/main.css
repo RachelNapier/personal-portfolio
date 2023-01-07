@@ -1,4 +1,8 @@
 .navigation {
-  background-color: #fcd5ce; }
+  background-color: #fcfafa; }
+  .navigation__container {
+    justify-content: flex-end; }
   .navigation__nav a {
-    color: blue; }
+    color: #8ca3af; }
+    .navigation__nav a:hover, .navigation__nav a:active {
+      color: #4d6a7b; }
