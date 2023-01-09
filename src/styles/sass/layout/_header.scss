@@ -1,1 +1,48 @@
+.header {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
 
+  & > div {
+    flex: 50%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: left;
+    height: auto;
+    border-radius: 10px;
+    padding: 0 1rem 0 4rem;
+
+    h1 {
+      color: $color-primary-light;
+    }
+  }
+
+  &__image {
+    height: 300;
+    width: 30rem;
+    padding: 0.5rem;
+  }
+
+  // &__text-box {
+  //   background-color: rgba($color-white, 0.7);
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   text-align: left;
+  //   height: auto;
+  //   width: 80%;
+  //   padding: 50px 25px;
+  // }
+}

@@ -1,0 +1,21 @@
+// GLOBAL TYPOGRAPHY
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+//
+
+.heading-primary {
+  backface-visibility: hidden;
+  margin-bottom: 15px;
+  color: $color-primary-dark;
+}
+
+.heading-primary--main {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
