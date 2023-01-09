@@ -7,11 +7,11 @@
 
   &__nav {
     a {
-      color: $color-dusty-blue-light;
+      color: $color-primary-light;
 
       &:hover,
       &:active {
-        color: $color-dusty-blue-dark;
+        color: $color-primary-dark;
       }
     }
   }
